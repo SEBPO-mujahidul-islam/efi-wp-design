@@ -443,8 +443,9 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003283",endCo
 }
 
 .submit-btn{
-	width: auto;
-	padding: 0 40px;
+	width: 250px;
+    padding: 0 40px;
+    margin: 0 auto;
 }
 .submit-btn button{
   display: inline-block;
@@ -849,6 +850,11 @@ font-weight: 600;
 /*responsive*/
 
 @media screen and (max-width: 1366px) {
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+	font-size: 13px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
 .banner-bottom {
     width: 100%;
     padding: 30px 0;
@@ -1046,8 +1052,6 @@ font-weight: 600;
 /* The Data area s */
 .efi_the_data_area{
 	width: 100%;
-	margin: 0px 0px 100px 0px;
-	padding: 0px;
 	background-color: #003283;
   }
   .efi_the_data_header{
@@ -1306,8 +1310,6 @@ font-weight: 600;
   /* ======== Incorporate area s ======== */
 	.efi_incorporate_area{
 	  width: 100%;
-	  margin: 0px;
-	  padding: 0px;
 	  background-color: #003283;
 	}
 	.efi_incorporate_header{
