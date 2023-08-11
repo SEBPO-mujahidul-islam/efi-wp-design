@@ -389,10 +389,10 @@ color: #FDFBDF;
 .footer-bg{
 	width: 100%;
 	 background: rgb(0,50,131);
-background: -moz-radial-gradient(circle, rgba(0,50,131,1) 0%, rgba(6,7,10,1) 100%);
-background: -webkit-radial-gradient(circle, rgba(0,50,131,1) 0%, rgba(6,7,10,1) 100%);
-background: radial-gradient(circle, rgba(0,50,131,1) 0%, rgba(6,7,10,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003283",endColorstr="#06070a",GradientType=1);
+background: -moz-linear-gradient(208deg, rgba(0,50,131,1) 0%, rgba(23,25,45,1) 100%);
+background: -webkit-linear-gradient(208deg, rgba(0,50,131,1) 0%, rgba(23,25,45,1) 100%);
+background: linear-gradient(208deg, rgba(0,50,131,1) 0%, rgba(23,25,45,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003283",endColorstr="#17192d",GradientType=1); 
 }
 .footer-inner{
 	padding-left: 16%;
@@ -810,11 +810,11 @@ font-weight: 600;
 	font-size: 30px;
 }
 .video-bg{
-	background: rgb(0,50,131);
-background: -moz-radial-gradient(circle, rgba(0,50,131,1) 0%, rgba(6,7,10,1) 100%);
-background: -webkit-radial-gradient(circle, rgba(0,50,131,1) 0%, rgba(6,7,10,1) 100%);
-background: radial-gradient(circle, rgba(0,50,131,1) 0%, rgba(6,7,10,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003283",endColorstr="#06070a",GradientType=1);
+	 background: rgb(0,50,131);
+background: -moz-linear-gradient(208deg, rgba(0,50,131,1) 0%, rgba(23,25,45,1) 100%);
+background: -webkit-linear-gradient(208deg, rgba(0,50,131,1) 0%, rgba(23,25,45,1) 100%);
+background: linear-gradient(208deg, rgba(0,50,131,1) 0%, rgba(23,25,45,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003283",endColorstr="#17192d",GradientType=1); 
 }
 .video-section .carousel-indicators .active {
     opacity: 1;
