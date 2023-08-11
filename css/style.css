@@ -850,24 +850,30 @@ font-weight: 600;
 /*responsive*/
 
 @media screen and (max-width: 1366px) {
-.ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
-	font-size: 13px;
-	padding-left: 10px;
-	padding-right: 10px;
+
+	.ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+		font-size: 13px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.banner-bottom {
+		width: 100%;
+		padding: 30px 0;
+		background: url(../image/banner-bottom-bg.png) left -90px top no-repeat;
+	}
+	.sign-btn {
+		width: auto;
+		padding: 0 14%;
+	}
+	.banner-part p {
+		width: 50%;
+	}
+	.form-section {
+		width: 50%;
+		margin: 50px auto 0;
+	}
 }
-.banner-bottom {
-    width: 100%;
-    padding: 30px 0;
-    background: url(../image/banner-bottom-bg.png) left -90px top no-repeat;
-}
-.sign-btn {
-    width: auto;
-    padding: 0 14%;
-}
-.banner-part p {
-    width: 50%;
-}
-}
+
 @media screen and (max-width: 1280px) {
 .banner-bottom {
     width: 100%;
