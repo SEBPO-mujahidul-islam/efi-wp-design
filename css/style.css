@@ -872,6 +872,9 @@ font-weight: 600;
 		width: 50%;
 		margin: 50px auto 0;
 	}
+	.social {
+		width: 53%;
+	}
 }
 
 @media screen and (max-width: 1280px) {
