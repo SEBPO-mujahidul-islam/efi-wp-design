@@ -1259,7 +1259,7 @@ font-weight: 600;
   .efi_testimonial_carousel,
   .efi_testimonial_carousel-inner,
   .efi_testimonial_carousel-item {
-	height: 370px;
+	height: 400px;
 	object-fit: cover;
   }
   
@@ -1397,6 +1397,7 @@ font-weight: 600;
   
 	.efi_incorporate_feature_item h5{
 		font-family: "new-order", sans-serif;
+		font-weight: 400; /*Book */
 	  font-size: 45px;
 	  line-height: 45px;
 	  text-align: center;
@@ -1445,6 +1446,12 @@ font-weight: 600;
 	/* Overlay Style e */
 	/* Incorporate area s */
   
+	@media all and (max-width: 1850px){
+		.efi_testimonial_area {
+			background-position: 30%;
+		}
+	}
+
 	@media all and (max-width: 1440px){
 	  .efi_incorporate_feature_item h2{
 		font-size: 60px;
@@ -1454,6 +1461,41 @@ font-weight: 600;
 		font-size: 64px;
 		line-height: 75px;
 	  }
+
+	/* Testimonial max-1440px */
+	.efi_testimonial_area{
+		/* max-height: 600px; */
+		max-height: 750px;
+	}
+	.efi_testimonial_item_txt{
+		font-size: 30px;
+		line-height: 36px;
+		}
+		.efi_testimonial_area{
+		background-position: 15%;
+		}
+		.efi_testimonials {
+		padding: 12% 9% 4% 36%;
+		}
+		.efi_testimonial_item_author{
+		font-size: 20px;
+		line-height: 22px;
+		}
+		.fa-quote-left {
+		left: -56px;
+		top: -18px;
+		font-size: 40px!important;
+		}
+		.fa-quote-right {
+		right: 50%;
+		bottom: -45px;
+		font-size: 40px!important;
+		}
+		.efi_testimonial_item:first-child {
+		padding-bottom: 30px;
+		}
+
+		/* Testimonial e max-1440px */
 	}
 	@media all and (max-width: 1359px){
 	  .LaptabMobHide{
