@@ -1,1995 +1,614 @@
-@charset "utf-8";
-/* CSS Document */
-@import url('https://fonts.cdnfonts.com/css/gotham-6');
- @import url("https://use.typekit.net/wlz8rsc.css");
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EFI</title>
 
+<!-- Bootstrap core CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link href="css/style.css" rel="stylesheet">
+<link href="css/splide.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
 
-body {
-	margin: 0;
-	font-family: var(--bs-font-sans-serif);
-	font-size: 1rem;
-	font-weight: 400;
-	line-height: 1.5;
-	color: #212529;
-	background-color: #003283;
-	-webkit-text-size-adjust: 100%;
-	-webkit-tap-highlight-color: transparent
-}
-
-
-@media (max-width:414px) {
-	.col-sm-auto {
-	flex: 0 0 auto;
-	width: auto
-}
-.col-sm-1 {
-	flex: 0 0 auto;
-	width: 8.33333333%
-}
-.col-sm-2 {
-	flex: 0 0 auto;
-	width: 16.66666667%
-}
-.col-sm-3 {
-	flex: 0 0 auto;
-	width: 25%
-}
-.col-sm-4 {
-	flex: 0 0 auto;
-	width: 33.33333333%
-}
-.col-sm-5 {
-	flex: 0 0 auto;
-	width: 41.66666667%
-}
-.col-sm-6 {
-	flex: 0 0 auto;
-	width: 50%
-}
-.col-sm-7 {
-	flex: 0 0 auto;
-	width: 58.33333333%
-}
-.col-sm-8 {
-	flex: 0 0 auto;
-	width: 66.66666667%
-}
-.col-sm-9 {
-	flex: 0 0 auto;
-	width: 75%
-}
-.col-sm-10 {
-	flex: 0 0 auto;
-	width: 83.33333333%
-}
-.col-sm-11 {
-	flex: 0 0 auto;
-	width: 91.66666667%
-}
-.col-sm-12 {
-	flex: 0 0 auto;
-	width: 100%
-}
-}
-
-
-/*menu*/
-.ftco-navbar-light {
-	z-index: 3;
-}
-.fa-bars {
-	color: #fff;
-}
-
-@media (max-width: 991.98px) {
-.ftco-navbar-light {
-	position: relative;
-	top: 0;
-}
-}
-
-@media (max-width: 991.98px) {
-.ftco-navbar-light .navbar-nav {
-	padding-bottom: 10px;
-}
-}
-.ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
-	font-family: "freight-sans-pro", sans-serif;
-	font-size: 16px;
-	padding-top: 1.2rem;
-	padding-bottom: 1.2rem;
-	padding-left: 20px;
-	padding-right: 20px;
-	font-weight: 400;
-	color: #FDFBDF;
-	position: relative;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	opacity: 1 !important;
-	
-}
-.ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover:after {
-	content: "";
-	display: block;
-	width: 40px;
-	height: 4px;
-	margin: 5px auto 0;
-	border-radius: 5px;
-	background: #fff;
-	transition: .3s ease;
-	
-}
-
-@media (max-width: 991.98px) {
-
-.ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
-	padding-left: 0;
-	padding-right: 0;
-	padding-top: .9rem;
-	padding-bottom: .9rem;
-	color: #FDFBDF;
-	border-bottom: 1px solid #fff;
-	font-size: 14px;
-}
-.ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover:after {
-	color: #FDFBDF;
-	border-bottom: none;
-	background: none;
-}
-}
-.ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu {
-	border: none;
-	background: #fff;
-	-webkit-box-shadow: 0px 10px 34px -20px rgba(0, 0, 0, 0.41);
-	-moz-box-shadow: 0px 10px 34px -20px rgba(0, 0, 0, 0.41);
-	box-shadow: 0px 10px 34px -20px rgba(0, 0, 0, 0.41);
-	border-radius: 4px;
-	padding: 0;
-}
-.ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu .dropdown-item {
-	font-size: 12px;
-	color: #000;
-	
-}
-.ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu .dropdown-item:hover, .ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu .dropdown-item:focus {
-	background: #fec771;
-	color: #fff;
-}
-.ftco-navbar-light .navbar-nav > .nav-item.cta > a {
-	color: #fff;
-	background: #fec771;
-	border-radius: 0px;
-}
-
-@media (max-width: 767.98px) {
-.ftco-navbar-light .navbar-nav > .nav-item.cta > a {
-	padding-left: 15px;
-	padding-right: 15px;
-}
-}
-
-@media (max-width: 991.98px) {
-.ftco-navbar-light .navbar-nav > .nav-item.cta > a {
-	color: #fff;
-	background: #fec771;
-	border-radius: 4px;
-}
-}
-.ftco-navbar-light .navbar-nav > .nav-item.active > a:after {
-	content: "";
-	display: block;
-	width: 40px;
-	height: 4px;
-	margin: 5px auto 0;
-	border-radius: 5px;
-	background: #fff;
-}
-
-@media (max-width: 991.98px) {
-.ftco-navbar-light .navbar-nav > .nav-item.active > a:after {
-	border-bottom: none;
-	color: #FDFBDF;
-	background: none;
-}
-	
-
-.navbar-collapse {
-    padding-left: 15px;
-	}
-}
-
-
-.ftco-navbar-light .navbar-toggler {
-	font-family: "new-order", sans-serif;
-font-weight: 600;
-	border: none;
-	color: #FDFBDF !important;
-	cursor: pointer;
-	padding-right: 0;
-	text-transform: uppercase;
-	font-size: 20px;
-	letter-spacing: .1em;
-	padding-left: 18px;
-}
-.ftco-navbar-light .navbar-toggler:focus {
-	outline: none !important;
-}
-.dropdown-toggle::after {
-	display: none;
-}
-.ml-auto, .mx-auto {
-	margin-left: auto !important;
-}
-.mr-md-3,  .mx-md-3 {
-	margin-right: 1rem !important;
-}
-.input-box {
-	position: relative;
-	width: 60%;
-}
-.input-box i {
-	position: absolute;
-	right: 13px;
-	top: 31px;
-	color: #003283;
-}
-.form-control {
-	font-family: 'Gotham Light', sans-serif;
-	font-size: 12px;
-	height: 32px;
-	border-radius: 50px;
-	background-color: #FDFBDF;
-}
-.form-control:focus {
-	box-shadow: none;
-	border-color: #eee;
-}
-@media screen and (min-width: 414px) and (max-width: 991.98px){
-	.input-box{
-	width: auto;
-		}
-}
-.banner-bar{
-	border-left:1px solid #FDFBDF;
-	position: relative;
-}
-.banner-bar::after{
-		content: "";
-	background: url(../image/banner-print.png)  no-repeat;
-	position: absolute;
-	left: -20px;
-	top: 33%;
-	width: 100%;
-	height: 210px;
-	z-index: 500;
-}
-
-.banner-part{
-	width:auto;
-	padding: 35px 0;
-	padding-left: 30px;
-}
-.banner-part h1{
-	font-family: "new-order", sans-serif;
-	font-weight: 600;
-	font-size: 80px;
-	line-height: 90px;
-	color: #FDFBDF;
-}
-.banner-part h1 span{
-color: #FDFBDF;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white;
-}
-.banner-part p{
-	font-family: "freight-sans-pro", sans-serif;
-	font-weight: 400;
-	font-size: 17px;
-	color: #FDFBDF;
-	line-height: 18px;
-	padding-top: 20px;
-	width: 34%;
-}
-.banner-pattern{
-	width: auto;
-}
-.banner-pattern-top{
-	border-top:1px solid #FDFBDF;
-}
-.banner-pattern-inner{
-	width: 100%;
-	text-align: right;
-	padding-right: 8%;
-}
-.pattern-bar{
-	height: 17px;
-    background: url(../image/banner-pattern.png) right no-repeat;
-}
-.banner-pattern-bottom{
-	border-top:1px solid #FDFBDF;
-}
-.banner-bottom{
-	width: 100%;
-	padding: 70px 0;
-	
-	background: url(../image/banner-bottom-bg.png) no-repeat;
-}
-
-.sign-btn{
-	width: auto;
-	padding: 0 40px;
-}
-.sign-btn a{
-  display: inline-block;
-  position: relative;
-  text-decoration: none;
- font-family: "freight-sans-pro", sans-serif;
-	font-weight: 400;
-  color: #003283;
-  background: #FDFBDF;
-  padding: 6px 20px;
-  font-size: 18px;
-  width: auto;
-  overflow: hidden;
-}
-
-.sign-btn a span {
-  z-index: 5;
-  position: relative;
-  transition: color 350ms ease;
-	background: url(../image/sign-arrow.png) right no-repeat;
-	padding-right: 30px;
-}
-.sign-btn a:hover span{
-  color: white;
-	background: url(../image/sign-arrow-hover.png) right no-repeat;
-}
-.sign-btn a img:hover{
-  background: url(../image/sign-arrow-hover.png) no-repeat;
-	
-}
-
-.sign-btn a::after, .sign-btn a::before{
-  content: " ";
-  display: block;
-  position: absolute;
-  width: 100%;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  background:#F79646;
-  z-index: -1;
-}
-
-.sign-btn a::before {
-/*   background: blue; */
-  transform: translateX(-100%);
-  z-index: 1;
-}
-
-.sign-btn a:hover:before {
-  transform: translateX(0);
-  transition: transform 350ms ease;
+<!-- Custom styles for this template -->
+<link href="https://fonts.cdnfonts.com/css/gotham-6" rel="stylesheet">
+<link rel="stylesheet" href="https://use.typekit.net/wlz8rsc.css">
+</head>
+<body>
+<header>
+  <div class="container-fluid ">
+    <div class="row">
+      <div class="col-md-2 col-sm-2 ps-lg-4 text-center pt-4"> <a href="#" target="_blank"><img class="img-fluid" src="image/logo.png" alt=""></a> </div>
+      <div class="col-md-10 col-sm-10">
+        <div class="banner-bar">
+          <div class="row">
+            <div class="col-md-9 col-sm-7">
+              <nav class="navbar navbar-expand-lg ftco_navbar ftco-navbar-light" id="ftco-navbar">
+                <button class="navbar-toggler pt-4" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation"> <span class="fa fa-bars"></span> Menu </button>
+                <div class="collapse navbar-collapse" id="ftco-nav">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Brand Activation</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">On Box Advertising (OBA)</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Partner Locator</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">contact</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About EFI</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="col-md-3 col-sm-5">
+              <div class="input-box pt-4">
+                <input type="text" class="form-control" placeholder="SEARCH...">
+                <i class="fa fa-search"></i> </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="banner-part">
+                <h1>Unlock new<br>
+                  possibilities<br>
+                  to <span>excite</span> </h1>
+                <p>Well-branded eCommerce packaging offers new possibilities to brands
+                  looking to elevate perception, stand out, and stay top of mind. </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 pe-0">
+              <div class="banner-pattern">
+                <div class="banner-pattern-top"></div>
+                <div class="banner-pattern-inner">
+                  <div class="pattern-bar"> </div>
+                </div>
+                <div class="banner-pattern-bottom"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="banner-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md--12">
+              <div class="sign-btn"> <a href="#"><span>Sign Up to Learn More</span></a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<main> 
+  <!-- ======= efi thedata ======= -->
+  <div class="container-fluid efi_the_data_area">
+    <div class="">
+      <div class="">
+        <!-- efi thedata header -->
+        <div class="efi_the_data_header">
+          <h2>Consider the Data</h2>          
+        </div>
+        <!-- efi thedata header e -->
+        <!-- efi thedata Features -->
+        <div class="row efi_thedata_features">
+          <!-- efi thedata Feature item -->
+          <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4 efi_thedata_feature_item one">
+            <div class="efi_thedata_feature_item_hover">
+              <h1>4.1x</h1>
+              <h2>HIGHER</h2>
+              <h3>AD RECALL</h3>
+              <p>for on-box advertising<br class="LaptabMobHide"><br class="MobShow">
+                than traditional media campaigns</p>
+            </div>   
+            <div class="overlayCentertoTop">
+              <div class="efi_thedata_overlay_content">
+                <h1>4.1x</h1>
+                <h2>HIGHER</h2>
+                <h3>AD RECALL</h3>
+                <p>for on-box advertising<br class="LaptabMobHide"><br class="MobShow">
+                  than traditional media campaigns</p>
+              </div>
+            </div>            
+          </div>
+          <!-- efi thedata Feature item e -->
+          <!-- efi thedata Feature item -->
+          <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4 efi_thedata_feature_item two">
+            <div>
+              <div class="efi_thedata_feature_item_img_area">
+                <h5>42%</h5>
+                <img src="image/the-data-circle.png">
+              </div>          
+                <p>of marketers want<br class="LaptabMobHide"><br class="MobShow">
+                  unboxing content from creators</p>              
+            </div>
+            <div class="overlayCentertoTop">
+              <div class="efi_thedata_overlay_content">
+                <div class="efi_thedata_feature_item_img_area">
+                  <h5>42%</h5>
+                  <img src="image/the-data-circle-Hover.png">
+                </div>          
+                  <p>of marketers want<br class="LaptabMobHide"><br class="MobShow">
+                    unboxing content from creators</p>   
+              </div>
+            </div>   
+          </div>
+          <!-- efi thedata Feature item e -->
+          <!-- efi thedata Feature item -->
+          <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4 efi_thedata_feature_item three">
+            <div>              
+                <img src="image/The-data-Add-to-cart Icon.png">      
+                <p>14-point increase year over year in<br class="LaptabMobHide"><br class="MobShow"> 
+                  number of consumers who will likely<br class="LaptabMobHide"><br class="MobShow"> 
+                  purchase again based on premium<br class="LaptabMobHide"><br class="MobShow"> 
+                  packaging</p>        
+            </div> 
+            <div class="overlayCentertoTop">
+              <div class="efi_thedata_overlay_content">
+                <img src="image/The-data-Add-to-cart Icon_Hover.png">      
+                <p>14-point increase year over year in<br class="LaptabMobHide"><br class="MobShow"> 
+                  number of consumers who will likely<br class="LaptabMobHide"><br class="MobShow"> 
+                  purchase again based on premium<br class="LaptabMobHide"><br class="MobShow"> 
+                  packaging</p>     
+              </div>
+            </div>              
+          </div>
+          <!-- efi thedata Feature item e -->
+          <!-- efi thedata Feature item -->
+          <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4 efi_thedata_feature_item four">
+            <div>              
+                <img src="image/The-data-Standing-up-man Icon.png">      
+                <p>who view unboxing videos do<br class="LaptabMobHide"><br class="MobShow"> 
+                  so when researching a<br class="LaptabMobHide"><br class="MobShow"> 
+                  particular product
+                  </p>       
+            </div>  
+            <div class="overlayCentertoTop">
+              <div class="efi_thedata_overlay_content">
+                <img src="image/The-data-Standing-up-man Icon-Hover.png">      
+                <p>who view unboxing videos do<br class="LaptabMobHide"><br class="MobShow"> 
+                  so when researching a<br class="LaptabMobHide"><br class="MobShow"> 
+                  particular product
+                  </p>   
+              </div>
+            </div>             
+          </div>
+          <!-- efi thedata Feature item e -->
+          <!-- efi thedata Feature item -->
+          <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4 efi_thedata_feature_item five">
+            <div class="efi_thedata_feature_item_hover">
+              <h1>2nd</h1>
+              <h2>MOST</h2>
+              <h3>EFFECTIVE</h3>
+              <p>media for sustainable commercial<br class="LaptabMobHide"><br class="MobShow"> 
+                growth through increased sales<br class="MobShow"> and<br class="LaptabMobHide"> 
+                market share</p>
+            </div>    
+            <div class="overlayCentertoTop">
+              <div class="efi_thedata_overlay_content">
+                <h1>2nd</h1>
+                <h2>MOST</h2>
+                <h3>EFFECTIVE</h3>
+                <p>media for sustainable commercial<br class="LaptabMobHide"><br class="MobShow"> 
+                  growth through increased sales<br class="MobShow"> and<br class="LaptabMobHide"> 
+                  market share</p>
+              </div>
+            </div>           
+          </div>
+          <!-- efi thedata Feature item e -->
+          <!-- efi thedata Feature item -->
+          <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4 efi_thedata_feature_item six">
+            <div>              
+                <img src="image/The-data-Tap-Icon.png">      
+                <p>1st physical brand<br class="MobShow"> touchpoint<br class="LaptabMobHide"> 
+                  in a digital eCommerce journey</p>         
+            </div>   
+            <div class="overlayCentertoTop">
+                <div class="efi_thedata_overlay_content">
+                  <img src="image/The-data-Tap-Icon_Hover.png">      
+                  <p>1st physical brand<br class="MobShow"> touchpoint<br class="LaptabMobHide"> 
+                    in a digital eCommerce journey</p>  
+                </div>
+            </div>         
+          </div>
+          <!-- efi thedata Feature item e -->          
+        </div>
+        <!-- efi thedata Features e -->
+      </div>
+    </div>
+  </div>
+  <!-- ======= efi thedata e ====== -->
+  <!-- ======= efi testimonial e ====== -->    
+  <div class="container-fluid efi_testimonial_area">
+      <div class="efi_testimonials">
+        <div class="efi_testimonial_item">          
+          <p class="efi_testimonial_item_txt"><i class="fa fa-quote-left"></i>In a digital world, packages stand out as a welcome physical touchpoint. 
+            Customers engage with OBA unlike any other form of advertising by interacting with the parcels 
+            during the most rewarding phase of the shopping journey—the unboxing moment.<i class="fa fa-quote-right"></i></p>            
+          <p class="efi_testimonial_item_author">Ad Age, October 22,<br> 2022</p>
+        </div>
+        <div class="efi_testimonial_item">
+          <p class="efi_testimonial_item_txt"><i class="fa fa-quote-left"></i>The purpose of packaging is to elevate a buyer’s 
+            mood back to what it was when they made the purchase.  
+            They need to get excited again.  It has to bring back all those emotions.<i class="fa fa-quote-right"></i>
+          </p>
+          <p class="efi_testimonial_item_author">Packaging Thought<br> Leader</p>
+        </div>
+      </div>
+      <!-- desktop show -->
+      <!-- Mobile show -->
+      <div class="efi_testimonial_carousel DskHide">
+        <div class="efi_testimonial_carousel-inner">
+            <!--Item 01 start -->
+            <div class="efi_testimonial_carousel-item">
+              <div class="efi_testimonial_item">          
+                <p class="efi_testimonial_item_txt"><i class="fa fa-quote-left"></i>In a digital world, packages stand out as a welcome physical touchpoint. 
+                  Customers engage with OBA unlike any other form of advertising by interacting with the parcels 
+                  during the most rewarding phase of the shopping journey—the unboxing moment.<i class="fa fa-quote-right"></i></p>            
+                <p class="efi_testimonial_item_author">Ad Age, October 22,<br> 2022</p>
+              </div>
+            </div>
+            <!-- END Item 01 -->
   
-}
+            <!--Item 02 start -->
+            <div class="efi_testimonial_carousel-item">
+              <div class="efi_testimonial_item">
+                <p class="efi_testimonial_item_txt"><i class="fa fa-quote-left"></i>The purpose of packaging is to elevate a buyer’s 
+                  mood back to what it was when they made the purchase.  
+                  They need to get excited again.  It has to bring back all those emotions.<i class="fa fa-quote-right"></i>
+                </p>
+                <p class="efi_testimonial_item_author">Packaging Thought<br> Leader</p>
+              </div>
+            </div>
+            <!-- END Item 02 -->
+        </div>
+        <div class="efi_testimonial_carousel-controls">
+            <span class="prev"></span>
+            <span class="next"></span>
+        </div>
+        <div class="efi_testimonial_carousel-indicators"></div>
+    </div>
+      <!-- Mobile show e -->
+  </div>
+  <!-- ======= efi testimonial e ======= -->
 
-.sign-btn a::after {
-   z-index: 0;
-  transform: translateX(100%);
-  transition: none;
-  transition: transform 350ms ease;
-}
-
-.sign-btn a:hover:after {
-  opacity: 1;
-  transform: translateX(0);
- transition: transform 350ms 360ms ease;
-}
-.footer-bg{
-	width: 100%;
-	 background: rgb(0,50,131);
-background: -moz-linear-gradient(208deg, rgba(0,50,131,1) 0%, rgba(23,25,45,1) 100%);
-background: -webkit-linear-gradient(208deg, rgba(0,50,131,1) 0%, rgba(23,25,45,1) 100%);
-background: linear-gradient(208deg, rgba(0,50,131,1) 0%, rgba(23,25,45,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003283",endColorstr="#17192d",GradientType=1); 
-}
-.footer-inner{
-	padding-left: 16%;
-	
-}
-
-.subscribe-section{
-	width: auto;
-	padding-top: 90px;
-	    z-index: 600;
-    position: relative;
-}
-.subscribe-section h1{
-	font-family: "new-order", sans-serif;
-	font-weight: 600;
-	font-size: 40px;
-	color: #FDFBDF;
-	line-height: 50px;
-}
-
-.form-section{
-	width: 22%;
-	margin: 50px auto 0;
-}
-.form-section .form-control{
-	color: #003283;
-	font-family: "freight-sans-pro", sans-serif;
-	font-size: 16px;
-	font-weight: 300;
-	
-}
-.form-section input::-webkit-input-placeholder { /* Chrome */
-  color: #003283;
-	font-weight: 300;
-	
-}
-.form-section input::-ms-input-placeholder { /* IE 10+ */
-  color: #003283;
-	font-weight: 300;
-}
-.form-section input::-moz-placeholder { /* Firefox 19+ */
-  color: #003283;
-	font-weight: 300;
-  opacity: 1;
-}
-.form-section input:-moz-placeholder { /* Firefox 4 - 18 */
-  color: #003283;
-	font-weight: 300;
-  opacity: 1;
-}
-
-.submit-btn{
-	width: 250px;
-    padding: 0 40px;
-    margin: 0 auto;
-}
-.submit-btn button{
-  display: inline-block;
-  position: relative;
-  text-decoration: none;
-  font-family: "freight-sans-pro", sans-serif;
-  color: #003283;
-  background: #FDFBDF;
-  padding: 3px 50px;
-	font-weight: 400;
-  font-size: 18px;
-  width: auto;
-	border: none;
-  overflow: hidden;
-}
-
-.submit-btn button span {
-  z-index: 5;
-  position: relative;
-  transition: color 350ms ease;
-}
-.submit-btn button:hover span{
-  color: white;
-	
-}
-
-
-.submit-btn button::after, .submit-btn button::before{
-  content: " ";
-  display: block;
-  position: absolute;
-  width: 100%;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  background:#F79646;
-  z-index: -1;
-}
-
-.submit-btn button::before {
-/*   background: blue; */
-  transform: translateX(-100%);
-  z-index: 1;
-}
-
-.submit-btn button:hover:before {
-  transform: translateX(0);
-  transition: transform 350ms ease;
+  <!-- pachaging section
+================================================== -->
   
-}
+  <div class="container-fluid">
+    <div class="row text-center ">
+      <div class="col-md-12 ">
+        <div class="pakaging-section">
+          <h2>Unlock new possibilities </h2>
+          <div id="myCarousel" class="carousel slide px-0" data-ride="carousel"> 
+            <!-- Carousel indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+              <li data-target="#myCarousel" data-slide-to="4"></li>
+              <li data-target="#myCarousel" data-slide-to="5"></li>
+              <li data-target="#myCarousel" data-slide-to="6"></li>
+              <li data-target="#myCarousel" data-slide-to="7"></li>
+              <li data-target="#myCarousel" data-slide-to="8"></li>
+            </ol>
+            <!-- Wrapper for carousel items -->
+            <div class="carousel-inner ">
+              <div class="carousel-item active">
+                <h1>To transform your corrugated packaging designs</h1>
+                <p>Flexo printing is cost-effective but boring. Litho printing is beautiful but expensive. But digitally printed eCommerce corrugated packaging is the cost-effective and beautiful way to elevate your brand. On the outside. On the inside. Everywhere your customer looks.</p>
+                <div class="learn-btn"> <a href="#"><span>Learn More</span></a> </div>
+                <div class="image-section"><img src="image/slider01.webp" alt=""></div>
+              </div>
+              <div class="carousel-item">
+                <h1>To leverage new channels of communications</h1>
+                <p>Use space on boxes to include third party advertising or communicate new offers from your brand. And because the corrugated packaging is digitally printed,<br>
+                  you can react fast and print even faster.</p>
+                <div class="learn-btn"> <a href="#"><span>Learn More</span></a> </div>
+                <div class="image-section"><img src="image/slider02.webp" alt=""></div>
+              </div>
+              <div class="carousel-item">
+                <h1>To include design variations for better retail outcomes</h1>
+                <p>Whether your products are on-shelf or on-line they need to be noticed.  Want to get creative with your packaging to drive better retail outcomes? Through EFI digital solutions you’re able to print multiple colors, designs and layouts all during the same production run without having to change printing plates.  You save time and money while ensuring your brand is engaged.</p>
+                <div class="learn-btn"> <a href="#"><span>Learn More</span></a> </div>
+                <div class="image-section"><img src="image/slider03.webp" alt=""></div>
+              </div>
+              <div class="carousel-item">
+                <h1>To launch or elevate your subscription box business</h1>
+                <p>Every month, your customers expect to be delighted. Make sure it happens with every box. Digitally printed eCommerce corrugated packaging takes your customers from expectation to fulfillment to delight.</p>
+                <div class="learn-btn"> <a href="#"><span>Learn More</span></a> </div>
+                <div class="image-section"><img src="image/slider04.webp" alt=""></div>
+              </div>
+              <div class="carousel-item">
+                <h1>To build better connections through personalization or regionalization</h1>
+                <p>In addition to personalization, digitally printing corrugated packaging assures your rigorous brand standards are maintained worldwide. PMS colors, product photography, iconography, and fonts create absolute brand continuity from Paris, Maine to Paris, France.</p>
+                <div class="learn-btn"> <a href="#"><span>Learn More</span></a> </div>
+                <div class="image-section"><img src="image/slider05.webp" alt=""></div>
+              </div>
+              <div class="carousel-item">
+                <h1>To activate multi-cultural marketing plans </h1>
+                <p>The demographic landscape of the US has transformed, as 140 million multicultural consumers now represent 42% of US total consumers.  EFI digital print solutions for corrugated can help you accurately reflect audiences without disrupting current processes and adding cost. </p>
+                <div class="learn-btn"> <a href="#"><span>Learn More</span></a> </div>
+                <div class="image-section"><img src="image/slider06.webp" alt=""></div>
+              </div>
+              <div class="carousel-item">
+                <h1>To travel at the speed of today’s retail marketing</h1>
+                <p>Marketing today means taking advantage of hot trends, viral moments, social influencers, live-stream shopping, special editions, and LTOs. Digital means speed.  Speed means time-to-market.  Through EFI digital print solutions brands can maximize trends, planning cycles, and even when “viral moment” prayers are answered. </p>
+                <div class="learn-btn"> <a href="#"><span>Learn More</span></a> </div>
+                <div class="image-section"><img src="image/slider07.webp" alt=""></div>
+              </div>
+              <div class="carousel-item">
+                <h1>To always keep your brand on top</h1>
+                <p>Digital inkjet corrugated printing lets you ship your products in their own container (SIOC packaging) through leading eCommerce marketplaces. Your handling fees are reduced and your brand is always front and center.</p>
+                <div class="learn-btn"> <a href="#"><span>Learn More</span></a> </div>
+                <div class="image-section"><img src="image/slider08.webp" alt=""></div>
+              </div>
+              <div class="carousel-item">
+                <h1>To beautifully demonstrate your commitment to sustainability</h1>
+                <p>Digitally printed eCommerce corrugated packaging can help you demonstrate your brand's sustainability commitment by printing directly to kraft with white ink, all while satisfying your customers’ wishes to keep it green.</p>
+                <div class="learn-btn"> <a href="#"><span>Learn More</span></a> </div>
+                <div class="image-section"><img src="image/slider09.webp" alt=""></div>
+              </div>
+            </div>
+            <!-- Carousel controls --> 
+            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev"> <i class="fa fa-angle-left"></i> </a> <a class="carousel-control-next" href="#myCarousel" data-slide="next"> <i class="fa fa-angle-right"></i> </a> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Interview section
+================================================== -->
+  <div class="container-fluid video-bg">
+    <div class="row text-center">
+      <div class="md-col-12">
+        <div class="interview-section">
+          <h1>ThePackHub Expert Interview</h1>
+          <div class="video-section">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" te>1</button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2">2</button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3">3</button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active"> 
+					<div class="video-part">
+					<img src="image/video-slider-01.webp" class="w-100" alt="...">
+					</div>
+                  <div class="carousel-caption d-none d-md-block">
 
-.submit-btn button::after {
-   z-index: 0;
-  transform: translateX(100%);
-  transition: none;
-  transition: transform 350ms ease;
-}
+                    <h3>Part 1 - Kerry Sanders chats with Paul Jenkins</h3>
+                  </div>
+                </div>
+                <div class="carousel-item"> 
+                  					<div class="video-part">
+					<img src="image/video-slider-01.webp" class="w-100" alt="...">
+					</div>
+                  <div class="carousel-caption d-none d-md-block">
 
-.submit-btn button:hover:after {
-  opacity: 1;
-  transform: translateX(0);
- transition: transform 350ms 360ms ease;
-}
-.follow{
-	width: auto;
-	padding-top: 90px;
-}
-.follow h1{
-	font-family: "new-order", sans-serif;
-font-weight: 600;
-	font-size: 40px;
-	color: #FDFBDF;
-	line-height: 50px;
-}
-.social{
-	width: 30%;
-	padding-top: 40px;
-	z-index: 600;
-	position: relative;
-	margin: 0 auto;
-}
-.social ul{
-	padding: 0;
-	margin: 0;
-}
-.social ul li{
-	list-style: none;
-	display: inline-block;
-	padding-right: 16px;
-	
-}
-.social a i{
-	font-size: 55px;
-	background: transparent;
-}
-.footer-link{
-	width: auto;
-	padding-top: 70px;
-	margin: 0 auto;
-	padding-bottom: 50px;
-}
-.footer-link ul{
-	padding: 0;
-	margin: 0;
-	
-}
-.footer-link ul li{
-	display: inline-block;
-	list-style: none;
-	padding: 0 8px;
-	border-right: 2px solid #FDFBDF;
-	height: 16px;
-}
-.footer-link ul li:last-child{
-	border: none;
-	padding-right: 0;
-}
-.footer-link ul li a{
-	float: left;
-	display: block;
-   color: #FDFBDF;
-	font-family: "freight-sans-pro", sans-serif;
-	font-size: 14px;
-	line-height: 16px;
-	font-weight: 400;
-	text-decoration: none;
-	
-}
-.footer-link p{
-	padding-top: 20px;
-	color: #FDFBDF;
-	font-family: "freight-sans-pro", sans-serif;
-	font-size: 14px;
-	line-height: 16px;
-	font-weight: 400;
-	width: 100%;
-}
-.footer-bottom{
-	width: 100%;
-	padding: 70px 0;
-	background: url(../image/footer-bottom.png) left -60px top no-repeat;
-}
+                    <h3>Part 2 - Kerry Sanders chats with Paul Jenkins</h3>
+                  </div>
+                </div>
+                <div class="carousel-item"> 
+                  					<div class="video-part">
+					<img src="image/video-slider-01.webp" class="w-100" alt="...">
+					</div>
+                  <div class="carousel-caption d-none d-md-block">
 
-.pakaging-section{
-	width: auto;
-	padding-top: 50px;
-}
-.pakaging-section h2{
-	font-family: "new-order", sans-serif;
-font-weight: 600;
-	font-size: 40px;
-	color: #FDFBDF;
-	line-height: 50px;
-}
+                    <h3>Part 3 - Kerry Sanders chats with Paul Jenkins</h3>
+                  </div>
+                </div>
+              </div>
+				
+				
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.container --> 
 
-/*caroseoul*/
-.carousel {
-	padding: 10px 00px 90px;
-}
-.carousel h1{
-	font-family: "freight-sans-pro", sans-serif;
-	font-weight: 300;
-	color: #FDFBDF;
-	line-height: 50px;
-	font-size: 40px;
-}
-.carousel p{
-	font-family: "freight-sans-pro", sans-serif;
-	color: #FDFBDF;
-	font-weight: 300;
-	line-height: 30px;
-	font-size: 20px;
-	width: 40%;
-	margin: 0 auto;
-	min-height: 130px;
-}
-.carousel .carousel-item {
-	color: #999;
-	font-size: 14px;
-	text-align: center;
-	overflow: hidden;
-	min-height: 00px;
-}
-.carousel .carousel-item .img-box {
-	width: 135px;
-	height: 135px;
-	margin: 0 auto;
-	padding: 5px;
-	border: 1px solid #ddd;
-	border-radius: 50%;
-}
-.carousel .img-box img {
-	width: 100%;
-	height: 100%;
-	display: block;
-	border-radius: 50%;
-}
-.carousel .testimonial {
-	padding: 30px 0 10px;
-}
-.carousel .overview {	
-	font-style: italic;
-}
-.carousel .overview b {
-	text-transform: uppercase;
-	color: #7AA641;
-}
-.carousel-control-prev, .carousel-control-next {
-	width: 23px;
-	height: 42px;
-	margin-top: 0px;
-	top: 0%;
-	background: none;
-}
-.carousel-control-prev i,.carousel-control-next i  {
-	font-size: 50px;
-	line-height: 70px;
-	font-weight: 300;
-	position: absolute;
-	display: inline-block;
-	width: 24px;
-	height: 44px;
-	color: #4d6fa8;
-	/*text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;*/
-}
+  <!-- ======= efi Incorporate ======= -->
+  <div class="container-fluid efi_incorporate_area">
+    <div class="">
+      <div class="">
+        <!-- efi Incorporate header -->
+        <div class="efi_incorporate_header">
+          <h2>Incorporate the most<br>
+            sustainable printing technology</h2>          
+        </div>
+        <!-- efi Incorporate header e -->
+        <!-- efi Incorporate Features -->
+        <div class="row efi_incorporate_features">
+          <!-- efi Incorporate Feature item -->
+          <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4 efi_incorporate_feature_item one">
+            <div class="efi_incorporate_feature_item_hover">
+              <h2>NO<br class="MobShow"> PRINTING<br class="MobShow">
+              PLATES</h2>
+            </div>
+            <div class="overlayBtmtoTop">
+              <div class="efi_incorporate_overlay_content">
+                <h2>NO<br class="MobShow"> PRINTING<br class="MobShow">
+                  PLATES</h2>
+              </div>
+            </div>            
+          </div>
+          <!-- efi Incorporate Feature item e -->
+          <!-- efi Incorporate Feature item -->
+          <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4 efi_incorporate_feature_item two">
+            <div>
+              <h1>30%</h1>
+              <h3>Less energy</h3>
+            </div>  
+            <div class="overlayBtmtoTop">
+              <div class="efi_incorporate_overlay_content">
+                <h1>30%</h1>
+                <h3>Less energy</h3>
+              </div>
+            </div>          
+          </div>
+          <!-- efi Incorporate Feature item e -->
+          <!-- efi Incorporate Feature item -->
+          <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4 efi_incorporate_feature_item three">
+            <div>              
+                <img src="image/incorporate_recyle_.png">      
+                <p>Reduces storage and<br class="LaptabMobHide"><br class="MobShow"> 
+                corrugated waste during<br class="LaptabMobHide"><br class="MobShow"> 
+                make ready by 25%</p>
+            </div>  
+            <div class="overlayBtmtoTop">
+              <div class="efi_incorporate_overlay_content">
+                  <img src="image/incorporate_recyle_Hover.png">      
+                  <p>Reduces storage and<br class="LaptabMobHide"><br class="MobShow"> 
+                    corrugated waste during<br class="LaptabMobHide"><br class="MobShow"> 
+                    make ready by 25%</p>
+              </div>
+            </div>          
+          </div>
+          <!-- efi Incorporate Feature item e -->
+          <!-- efi Incorporate Feature item -->
+          <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4 efi_incorporate_feature_item four">
+            <div>
+              <div class="efi_incorporate_feature_item_img_area">
+                <h5>UP to<br>
+                  42%</h5>
+                <img src="image/incorporate_percent_circle.png">
+              </div>          
+                <p>Less ink used than<br class="LaptabMobHide"><br class="MobShow">
+                  water-based technology</p>              
+            </div>
+            <div class="overlayBtmtoTop">
+              <div class="efi_incorporate_overlay_content">
+                  <div class="efi_incorporate_feature_item_img_area">
+                    <h5>UP to<br>
+                      42%</h5>
+                    <img src="image/incorporate_percent_circle_Hover.png">
+                  </div>          
+                  <p>Less ink used than<br class="LaptabMobHide"><br class="MobShow">
+                      water-based technology</p> 
+              </div>
+            </div>
+          </div>
+          <!-- efi Incorporate Feature item e -->
+          <!-- efi Incorporate Feature item -->
+          <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4 efi_incorporate_feature_item five">
+            <div>
+              <h2>NO <br>
+                WASTEWATER</h2>              
+            </div>
+            <div class="overlayBtmtoTop">
+              <div class="efi_incorporate_overlay_content">
+                <h2>NO<br>
+                  WASTEWATER</h2>   
+              </div>
+            </div>
+          </div>
+          <!-- efi Incorporate Feature item e -->
+          <!-- efi Incorporate Feature item -->
+          <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4 efi_incorporate_feature_item six">
+            <div>
+                <h1>100%</h1>
+                <h3>Recyclable</h3>
+            </div>
+            <div class="overlayBtmtoTop">
+              <div class="efi_incorporate_overlay_content">
+                <h1>100%</h1>
+                <h3>Recyclable</h3>
+              </div>
+            </div>
+          </div>
+          <!-- efi Incorporate Feature item e -->
+        </div>
+        <!-- efi Incorporate Features e -->
+      </div>
+    </div>
+  </div>
+  <!-- ======= efi Incorporate e ======= -->
+</main>
 
-.carousel-indicators {
-	bottom: 40px;
-}
-.carousel-indicators li, .carousel-indicators li.active {
-	width: 8px;
-	height: 8px;
-	margin: 1px 3px;
-	border-radius: 50%;
-	border: none;
-}
-.carousel-indicators li {	
-	background: #FDFBDF;
-	border-color: #707070;
-	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
-	cursor: pointer;
-}
-.carousel-indicators li.active {	
-	background: #F68156;		
-	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
-}
-.image-section{
-	padding-top: 30px;
-	
-}
-.image-section img{
-	width: 100%;
-}
-
-
-.learn-btn{
-	width: auto;
-	padding-top: 20px;
-}
-.learn-btn a{
-  display: inline-block;
-  position: relative;
-  text-decoration: none;
-  font-family: "freight-sans-pro", sans-serif;
-  color: #003283;
-  background: #FDFBDF;
-  padding: 6px 50px;
-  font-size: 20px;
-	font-weight: 400;
-  width: auto;
-  overflow: hidden;
-}
-
-.learn-btn a span {
-  z-index: 5;
-  position: relative;
-  transition: color 350ms ease;
-}
-.learn-btn a:hover span{
-  color: white;
-}
-
-
-.learn-btn a::after, .learn-btn a::before{
-  content: " ";
-  display: block;
-  position: absolute;
-  width: 100%;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  background:#F79646;
-  z-index: -1;
-}
-
-.learn-btn a::before {
-/*   background: blue; */
-  transform: translateX(-100%);
-  z-index: 1;
-}
-
-.learn-btn a:hover:before {
-  transform: translateX(0);
-  transition: transform 350ms ease;
-  
-}
-
-.learn-btn a::after {
-   z-index: 0;
-  transform: translateX(100%);
-  transition: none;
-  transition: transform 350ms ease;
-}
-
-.learn-btn a:hover:after {
-  opacity: 1;
-  transform: translateX(0);
- transition: transform 350ms 360ms ease;
-}
-.image-section{
-	width: auto;
-	padding-bottom: 30px;
-}
-
-.interview-section{
-	width: auto;
-	padding-top: 30px;
-}
-.interview-section h1{
-	font-family: "new-order", sans-serif;
-font-weight: 600;
-	color: #FDFBDF;
-	line-height: 50px;
-	font-size: 40px;
-}
-.video-section{
-	width: 70%;
-	padding-top: 50px;
-	margin: 0 auto;
-	
-}
-.video-part{
-	border: 30px solid #fdfbdf;
-}
-.carousel-caption{
-	position: relative;
-	left:0;
-	right: 0;
-	bottom: 0;
-    padding-top: 30px;
-    padding-bottom: 1.25rem;
-    color: #fff;
-    text-align: center;
-}
-.carousel-caption h3{
-	font-family: "new-order", sans-serif;
-font-weight: 600;
-	color: #FDFBDF;
-	line-height: 50px;
-	font-size: 30px;
-}
-.video-bg{
-	 background: rgb(0,50,131);
-background: -moz-linear-gradient(208deg, rgba(0,50,131,1) 0%, rgba(23,25,45,1) 100%);
-background: -webkit-linear-gradient(208deg, rgba(0,50,131,1) 0%, rgba(23,25,45,1) 100%);
-background: linear-gradient(208deg, rgba(0,50,131,1) 0%, rgba(23,25,45,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003283",endColorstr="#17192d",GradientType=1); 
-}
-.video-section .carousel-indicators .active {
-    opacity: 1;
-	background: #F68156;
-	width: 66px;
-    height: 26px;
-	color: #fff;
-}
-
-.carousel-indicators [data-bs-target] {
-    box-sizing: content-box;
-    flex: 0 1 auto;
-    width: 66px;
-    height: 26px;
-    padding: 0;
-    margin-right: 3px;
-    margin-left: 3px;
-    text-indent: inherit;
-    cursor: pointer;
-    background-color: #FDFBDF;
-    background-clip: padding-box;
-    border: 0;
-	border-radius: 10px;
-    border-top:none;
-    border-bottom: none;
-    opacity: 1;
-	color: #003283;
-    transition: opacity .6s ease;
-	font-family: "new-order", sans-serif;
-font-weight: 600;
-	
-}
-
-
-/*responsive*/
-@media (min-width: 980px) and (max-width: 1630px){
-  
-
-}
-@media screen and (max-width: 1440px) {
-	.banner-bottom {
-    width: 100%;
-    padding: 55px 0;
-    background: url(../image/banner-bottom-bg.png) left -70px top no-repeat;
-}
-	.sign-btn {
-    width: auto;
-    padding: 0 14%;
-}
-	.form-section {
-    width: 50%;
-    margin: 50px auto 0;
-}
-	.ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
-    
-    font-size: 14px;
-	}
-	.banner-part p {
-    width: 45%;
-}
-	.social {
-    width: 40%;
-	}
-	.footer-bottom {
-    width: 100%;
-    padding: 70px 0;
-    background: url(../image/footer-bottom.png) left -130px top no-repeat;
-}
-}
-@media screen and (max-width: 1366px) {
-.ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
-	font-size: 13px;
-	padding-left: 10px;
-	padding-right: 10px;
-	
-}
-.banner-bottom {
-    width: 100%;
-    padding: 46px 0;
-    background: url(../image/banner-bottom-bg.png) left -90px top no-repeat;
-}
-.sign-btn {
-    width: auto;
-    padding: 0 14%;
-}
-.banner-part p {
-    width: 50%;
-}
-	.social {
-    width: 53%;}
-	.submit-btn {
-    width: 100%;
-}
-	.footer-bottom {
-    width: 100%;
-    padding: 70px 0;
-    background: url(../image/footer-bottom.png) left -142px top no-repeat;
-}
-	
-}
-@media screen and (max-width: 1280px) {
-.banner-bottom {
-    width: 100%;
-    padding: 30px 0;
-    background: url(../image/banner-bottom-bg.png) left -100px top no-repeat;
-}
-.submit-btn {
-    width: 100%;
-    padding: 0;
-}
-}
-@media screen and (max-width: 1024px) {
-.banner-bottom {
-    width: 100%;
-    padding: 30px 0;
-    background: url(../image/banner-bottom-bg.png) left -145px top no-repeat;
-}
-	.ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
-    font-size: 12px;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-	.input-box {
-    position: relative;
-    width: 100%;
-}
-	.footer-bottom {
-    width: 100%;
-    padding: 50px 0;
-    background: url(../image/footer-bottom.png) left -202px top no-repeat;
-}
-}
-@media screen and (max-width: 980px) {
-.banner-bottom {
-    width: 100%;
-    padding: 30px 0;
-    background: url(../image/banner-bottom-bg.png) left -150px top no-repeat;
-}
-.sign-btn {
-    width: auto;
-    padding: 0 6%;
-}
-.banner-part p {
-    width: 77%;
-}
-	.form-section {
-    width: 70%;
-    margin: 50px auto 0;
-}
-}
-@media screen and (max-width: 820px) {
-.banner-bottom {
-    width: 100%;
-    padding: 22px 0;
-    background: url(../image/banner-bottom-bg.png) left -180px top no-repeat;
-}
-.sign-btn {
-    width: auto;
-    padding: 0 16%;
-}
-.banner-part p {
-    width: 77%;
-}
-.footer-bottom {
-    width: 100%;
-    padding: 44px 0;
-    background: url(../image/footer-bottom.png) left -231px top no-repeat;
-}
-}
-@media screen and (max-width: 736px){
-	
-	.banner-part p {
-    width: 90%;
-}
-	.banner-bottom {
-    width: 100%;
-    padding: 30px 0;
-    background: url(../image/banner-bottom-bg-sm-736.png) left -40px top no-repeat;
-}
-	.form-section {
-    width: 90%;
-    margin: 0 auto;
-}
-	.social {
-    width: 67%;
-	}
-	
-	.footer-bottom {
-    width: 100%;
-    padding: 10px 0;
-    background: url(../image/banner-bottom-bg-sm-736.png) left -45px top  no-repeat;
-}
-		.carousel p {
-    width: 90%;
-
-}
-		.carousel h1 {
-    line-height: 40px;
-    font-size: 27px;
-	width: 90%;
-		margin: 0 auto;
-}
-	.video-section {
-    width: 80%;
-    padding-top: 30px;
-    margin: 0 auto;
-}
-	.video-section .carousel-indicators {
-		bottom: 20px;
-	}
-	.video-part {
-    border: 15px solid #fdfbdf;
-}
-}
-@media screen and (max-width: 414px){
-	
-		.banner-part h1{
-	font-size: 40px;
-    line-height: 50px;
-		}
-	
-	.banner-bar::after {
-    top: 30%;
-}
-	.banner-part {
-    width: auto;
-    padding: 15px 0;
-    padding-left: 13px;
-}
-	.banner-part p {
-    font-size: 15px;
-    line-height: 18px;
-    padding-top: 10px;
-    width: 100%;
-}
-	.banner-bottom {
-    width: 100%;
-    padding: 10px 0;
-    
-    background: url(../image/banner-bottom-bg-sm-02.png) no-repeat;
-}
-	.sign-btn a {
-    padding: 6px 10px;
-    font-size: 15px;
-}
-	.sign-btn {
-    width: auto;
-    padding: 0 72px;
-}
-	.subscribe-section h1 {
-    font-size: 22px;
-    line-height: 30px;
-}
-.form-section {
-    width: 80%;
-    margin: 0 auto;
-}	
-	.follow h1{
-	 font-size: 22px;
-    line-height: 30px;
-}
-	.social{
-	width: 90%;
-	}
-	.social ul li{
-		padding-right: 10px;
-		float: none;
-	}
-	.social ul li img{
-		width: 50%;
-	
-		}
-	.social a i {
-    font-size: 40px;
-    background: transparent;
-}
-	.footer-link ul li:nth-child(4){
-		border: none;
-	}
-	.footer-bottom {
-    width: 100%;
-    padding: 10px 0;
-    background: url(../image/footer-bottom-sm01.png) left -10px top  no-repeat;
-}
-	.footer-link {
-    padding-bottom: 20px;
-}
-	
-	.pakaging-section h2 {
-    font-size: 30px;
-    line-height: 40px;
-}
-	.carousel h1 {
-    line-height: 40px;
-    font-size: 27px;
-	width: 90%;
-		margin: 0 auto;
-}
-	.carousel p {
-    width: 90%;
-
-}
-	.image-section {
-    padding-bottom: 30px;
-}
-}
-
-
-
-
-
-
-
-
-
-/* 3 Sections == The Data, Testimonial, Incorporate style */
-
-/* The Data area s */
-.efi_the_data_area{
-	width: 100%;
-	background-color: #003283;
-  }
-  .efi_the_data_header{
-	max-width: 1148px;
-	margin: 110px auto;
-  }
-  .efi_the_data_header h2{
-	font-family: "new-order", sans-serif;
-	font-weight: 600; /*SemiBold */
-	font-size: 80px;
-	line-height: 95px;
-	text-align: center;
-	color: #FDFBDF;
-  }
-  .efi_thedata_feature_item{
-	height: 504px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-	text-align: center;
-	position: relative;    
-  }    
-  .efi_thedata_feature_item.one{
-	border-bottom: 4px solid #FDFBDF;
-	border-right: 4px solid #FDFBDF;
-  }
-  .efi_thedata_feature_item.two{
-	border-bottom: 4px solid #FDFBDF;
-	border-right: 4px solid #FDFBDF;
-  }
-  .efi_thedata_feature_item.three{
-	border-bottom: 4px solid #FDFBDF;
-	text-align: center;
-  }
-  .efi_thedata_feature_item.four{
-	border-right: 4px solid #FDFBDF;
-  }
-  .efi_thedata_feature_item.five{
-	border-right: 4px solid #FDFBDF;
-  }
-  .efi_thedata_feature_item_img_area{
-	position: relative;
-  }    
-  .efi_thedata_feature_item h1{
-	text-align: center;
-	color: #FDFBDF;
-	width: 100%;
-	font-family: "new-order", sans-serif;
-	font-weight: 700; /*Bold */
-	font-size: 162px;
-	line-height: 105px;
-  }
-  .efi_thedata_feature_item h2{
-	font-family: "freight-sans-pro", sans-serif;
-	font-weight: 600; /*SemiBold */
-	text-align: center;
-	color: #FDFBDF;
-	width: 100%;  
-  }
-  .efi_thedata_feature_item.one h2{
-	font-size: 81px;
-	line-height: 58px;
-  }
-  .efi_thedata_feature_item.five h2{
-	font-size: 104px;
-	line-height: 50px;
-  }
-  .efi_thedata_feature_item h3{
-	font-family: "freight-sans-pro", sans-serif;
-	font-weight: 600; /*SemiBold */
-	font-size: 56px;
-	line-height: 56px;
-	text-align: center;
-	color: #FDFBDF;
-  }
-  .efi_thedata_feature_item h5{
-	text-align: center;
-	color: #FDFBDF;    
-  }
-  .efi_thedata_feature_item.two h5{
-	font-family: "new-order", sans-serif;
-	font-weight: 700; /*Bold */
-	font-size: 65px;
-	position: absolute;
-	top: 36%;
-	left: 33%;  
-  }
-  .efi_thedata_feature_item p{
-	font-family: "freight-sans-pro", sans-serif;
-	font-weight: 400; /*Book */
-	font-size: 30px;
-	line-height: 40px;
-	text-align: center;
-	color: #FDFBDF;
-	width: 100%;
-  }
-  .efi_thedata_feature_item.two img{
-	max-width: 253px;
-	padding-bottom: 10px;
-  }
-  .efi_thedata_feature_item.three img{
-	max-width: 274px;
-	padding-bottom: 10px;
-  }  
-  .efi_thedata_feature_item.four img{
-	max-width: 313px;
-	padding-bottom: 10px;
-  }
-  .efi_thedata_feature_item.six img{
-	max-width: 250px;
-	padding-bottom: 15px;
-  }  
-	/* Overlay Style */
-  .overlayCentertoTop {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;  
-	position: absolute;
-	top: 50%;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background-color: #FDFBDF;    
-	overflow: hidden;
-	width: 100%;
-	height: 0;
-	transition-delay: .10;
-	transition: .3s ease;
-  }
-  .efi_thedata_feature_item:hover .overlayCentertoTop { 
-	top: 0;   
-	bottom: 0;
-	height: 100%;
-  }
-	.efi_thedata_overlay_content h1,  .efi_thedata_overlay_content h2, .efi_thedata_overlay_content h3,
-	.efi_thedata_overlay_content h5, .efi_thedata_overlay_content p {
-	  color: #003283;
-  }
-	
-  /* ======== The Data area e ========= */
-  
-  /* ======== The Testimonial area  ========= */
-  .efi_testimonial_area{
-	background-image: url(../image/Testimonials-bg.png);
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 882px;
-  }
-  .efi_testimonials {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	padding: 6% 15% 4% 30%;
-  }
-  .efi_testimonial_item{
-	display: flex;
-	flex-direction: column;
-  }
-  .efi_testimonial_item:first-child {
-	padding-bottom: 60px;
-  }
-  .efi_testimonial_item_txt{
-	position: relative;
-	font-family: "freight-sans-pro", sans-serif;
-	font-weight: 400; /*Book */
-	font-size: 40px;
-	line-height: 50px;
-	text-align: left;
-	color: #FDFBDF;
-  }
-  .fa-quote-left {
-	position: absolute;
-	left: -80px;
-	top: -25px;
-	font-size: 61px!important;
-	color: transparent;
-	-webkit-text-stroke-width: 2px;
-	-webkit-text-stroke-color: #FDFBDF;
-  }
-  .fa-quote-right {
-	position: absolute;
-	right: 40%;
-	bottom: -70px;
-	font-size: 61px!important;
-	color: transparent;
-	-webkit-text-stroke-width: 2px;
-	-webkit-text-stroke-color: #FDFBDF;
-  }
-  .efi_testimonial_item_author{
-	align-self: self-end;
-	font-family: "freight-sans-pro", sans-serif;
-	font-weight: 400; /*Book */
-	font-size: 30px;
-	line-height: 40px;
-	text-align: center;
-	color: #FDFBDF;
-  }
-  .efi_testimonial_carousel {
-	margin-left: 20%;
-	width: 73%;
-	position: relative;
-	display: none;
-	justify-content: flex-start;
-	overflow: hidden;
-  }
-  
-  .efi_testimonial_carousel,
-  .efi_testimonial_carousel-inner,
-  .efi_testimonial_carousel-item {
-	height: 400px;
-	object-fit: cover;
-  }
-  
-  .efi_testimonial_carousel
-	.efi_testimonial_carousel-inner
-	.efi_testimonial_carousel-item {
-	justify-content: flex-start;
-	flex: 1;
-  }
-  
-  .efi_testimonial_carousel-inner {
-	display: flex;
-	transition: all ease 0.5s;
-  }
-  
-  .efi_testimonial_carousel-item {
-	position: relative;
-	width: 100%;
-	overflow: hidden;
-  }
-  /* indicator styling */
-  .efi_testimonial_carousel-indicators {
-	position: absolute;
-	bottom: 0;
-	left: calc(100% / 2 - 20px);
-	text-align: center;
-	border-radius: 5px 5px 0 0;
-	padding: 10px 10px 5px;
-  }
-  
-  .efi_testimonial_carousel-indicators span {
-	display: inline-block;
-	background-color: #FDFBDF;
-	padding: 7px;
-	border-radius: 20px;
-	cursor: pointer;
-	margin: 0 5px;
-  }
-  .efi_testimonial_carousel-indicators span.active {
-	background-color: #F68156;
-  }  
-  /* ======== The Testimonial area e ========= */
-  
-  /* ======== Incorporate area s ======== */
-	.efi_incorporate_area{
-	  width: 100%;
-	  background-color: #003283;
-	}
-	.efi_incorporate_header{
-	  max-width: 1148px;
-	  margin: 110px auto;
-	}
-	.efi_incorporate_header h2{
-		font-family: "new-order", sans-serif;
-		font-weight: 600; /*SemiBold */
-		font-size: 80px;
-		line-height: 95px;
-		text-align: center;
-		color: #FDFBDF;
-	}
-	.efi_incorporate_feature_item{
-	  height: 504px;
-	  display: flex;
-	  justify-content: center;
-	  align-items: center;
-	  flex-wrap: wrap;
-	  text-align: center;
-	  position: relative;  
-	}  
-  
-	.efi_incorporate_feature_item.one{
-	  border-bottom: 4px solid #FDFBDF;
-	  border-right: 4px solid #FDFBDF;
-	}
-	.efi_incorporate_feature_item.two{
-	  border-bottom: 4px solid #FDFBDF;
-	  border-right: 4px solid #FDFBDF;
-	}
-	.efi_incorporate_feature_item.three{
-	  border-bottom: 4px solid #FDFBDF;
-	  text-align: center;
-	}
-	.efi_incorporate_feature_item.four{
-	  border-right: 4px solid #FDFBDF;
-	}
-	.efi_incorporate_feature_item.five{
-	  border-right: 4px solid #FDFBDF;
-	}
-	.efi_incorporate_feature_item_img_area{
-	  position: relative;
-	}  
-	.efi_incorporate_feature_item h1{
-		font-family: "new-order", sans-serif;
-		font-weight: 600; /*SemiBold */
-	  font-size: 175px;
-	  line-height: 100px;
-	  text-align: center;
-	  color: #FDFBDF;
-	  width: 100%;
-	}
-	.efi_incorporate_feature_item.six h1{
-	  line-height: 125px;
-	}
-	.efi_incorporate_feature_item h2{
-		font-family: "new-order", sans-serif;
-		font-weight: 600; /*SemiBold */
-	  font-size: 72px;
-	  line-height: 85px;
-	  text-align: center;
-	  color: #FDFBDF;
-	  width: 100%;
-	}
-	.efi_incorporate_feature_item.five h2{
-	  font-size: 83px;
-	  line-height: 100px;
-	}
-	.efi_incorporate_feature_item.three img{
-	  max-width: 173px;
-	  padding-bottom: 20px;
-	}  
-	.efi_incorporate_feature_item.four img{
-	  max-width: 253px;
-	  padding-bottom: 22px;
-	}
-	.efi_incorporate_feature_item h3{
-		font-family: "freight-sans-pro", sans-serif;
-		font-weight: 600; /*Book */
-	  font-size: 80px;
-	  line-height: 85px;
-	  text-align: center;
-	  color: #FDFBDF;
-	}
-  
-	.efi_incorporate_feature_item h5{
-		font-family: "new-order", sans-serif;
-		font-weight: 400; /*Book */
-	  font-size: 45px;
-	  line-height: 45px;
-	  text-align: center;
-	  color: #FDFBDF;    
-	  position: absolute;
-	  top: 85px;
-	  left: 90px;
-	}
-	.efi_incorporate_feature_item p{
-		font-family: "freight-sans-pro", sans-serif;
-		font-weight: 600; /*Book */
-	  font-size: 30px;
-	  line-height: 40px;
-	  text-align: center;
-	  color: #FDFBDF;
-	  width: 100%;
-	  max-width: 324px;
-	}
-	.efi_incorporate_feature_item.four p{
-	  line-height: 35px;
-	}
-	/* Overlay Style */
-	.overlayBtmtoTop {
-	  display: flex;
-	  justify-content: center;
-	  align-items: center;
-	  flex-wrap: wrap;    
-	  position: absolute;
-	  bottom: 0;
-	  left: 0;
-	  right: 0;
-	  background-color: #FDFBDF;    
-	  overflow: hidden;
-	  width: 100%;
-	  height: 0;
-	  transition: .5s ease;
-	}
-	.efi_incorporate_feature_item:hover .overlayBtmtoTop {    
-	  bottom: 0;
-	  height: 100%;
-	}
-	.efi_incorporate_overlay_content h1,  .efi_incorporate_overlay_content h2, .efi_incorporate_overlay_content h3,
-	.efi_incorporate_overlay_content h5, .efi_incorporate_overlay_content p {
-	  color: #003283;
-	}
-	/* Overlay Style e */
-	/* Incorporate area s */
-  
-	@media all and (max-width: 1850px){
-		.efi_testimonial_area {
-			background-position: 30%;
-		}
-	}
-
-	@media all and (max-width: 1440px){
-	  .efi_incorporate_feature_item h2{
-		font-size: 60px;
-		line-height: 70px;
-	  }
-	  .efi_incorporate_feature_item.five h2{
-		font-size: 64px;
-		line-height: 75px;
-	  }
-
-	/* Testimonial max-1440px */
-	.efi_testimonial_area{
-		/* max-height: 600px; */
-		max-height: 750px;
-	}
-	.efi_testimonial_item_txt{
-		font-size: 30px;
-		line-height: 36px;
-		}
-		.efi_testimonial_area{
-		background-position: 15%;
-		}
-		.efi_testimonials {
-		padding: 12% 9% 4% 36%;
-		}
-		.efi_testimonial_item_author{
-		font-size: 20px;
-		line-height: 22px;
-		}
-		.fa-quote-left {
-		left: -56px;
-		top: -18px;
-		font-size: 40px!important;
-		}
-		.fa-quote-right {
-		right: 50%;
-		bottom: -45px;
-		font-size: 40px!important;
-		}
-		.efi_testimonial_item:first-child {
-		padding-bottom: 30px;
-		}
-
-		/* Testimonial e max-1440px */
-	}
-	@media all and (max-width: 1359px){
-	  .LaptabMobHide{
-		display: none;
-	  }
-	  /* incorporate max-1359px */
-	  .efi_thedata_feature_item{
-		max-height: 450px;
-		padding: 15px;
-	  }
-	  .efi_the_data_header h2{
-		font-size: 64px;
-	  }
-	  .efi_thedata_feature_item h1{
-		font-size: 128px;
-		line-height: 80px;
-	  }
-	  .efi_thedata_feature_item.one h2{
-		font-size: 60px;
-		line-height: 40px;
-	  }
-	  .efi_thedata_feature_item h3{
-		font-size: 42px;
-		font-weight: 40px;
-	  }
-	  .efi_thedata_feature_item p{
-		font-size: 24px;
-		line-height: 30px;
-		max-width: 95%;
-		margin: 0px auto;
-	  }
-	  .efi_thedata_feature_item.two img{
-		max-width: 220px;
-	  }
-	  .efi_thedata_feature_item.two h5{
-		font-size: 52px;
-	  }
-	  .efi_thedata_feature_item.three img{
-		max-width: 235px;
-	  }
-	  .efi_thedata_feature_item.four img{
-		max-width: 250px;
-	  }
-	  .efi_thedata_feature_item.five h2{
-		font-size: 84px;
-	  }
-	  .efi_thedata_feature_item.six img{
-		max-width: 225px;
-	  }
-	  /* incorporate e max-1359px */
-  
-  
-	  /* the data max-1359px */
-	  .efi_incorporate_header h2{
-		font-size: 64px;
-	  }
-	  /* the data e max-1359px */
-	}
-	@media all and (max-width: 1024px){
-	  /* incorporate  max-1024px */
-	  .efi_the_data_header {
-		max-width: 1148px;
-		margin: 40px auto;
-	  }
-	  .efi_the_data_header h2 {
-		font-size: 30px;
-		line-height: 40px;
-	  }
-	  .efi_thedata_feature_item h1{
-		font-size: 58px;
-		line-height: 32px;
-	  }
-	  .efi_thedata_feature_item.one h2{
-		font-size: 30px;
-		line-height: 22px;
-	  }
-	  .efi_thedata_feature_item h3{
-		font-size: 22px;
-		line-height: 22px;
-	  }
-	  .efi_thedata_feature_item p, .efi_thedata_overlay_content p {
-		font-size: 16px;
-		line-height: 18px;
-	  }
-	  .efi_thedata_overlay_content p{
-		max-width: 95%;
-	  }
-	  .efi_thedata_feature_item.two img {
-		max-width: 92px;
-	  }
-	  .efi_thedata_feature_item.two h5 {
-		font-size: 18px;
-		top: 36%;
-		left: 42%;
-	  }
-	  .efi_thedata_feature_item.three img {
-		max-width: 85px;
-	  }
-	  .efi_thedata_feature_item.four img {
-		max-width: 111px;
-	  }
-	  .efi_thedata_feature_item.five h2 {
-		font-size: 38px;
-		line-height: 22px;
-	  }
-	  .efi_thedata_feature_item.six img {
-		max-width: 110px;
-	  }
-	  .efi_thedata_feature_item {
-		max-height: 210px;
-		padding: 15px;
-	  }
-	  .overlayCentertoTop{
-		padding: 0px 15px;
-	  }
-	  /* incorporate e max-1024px */
-  
-	  /* Testimonial max-1024px */
-	  .efi_testimonial_item_txt{
-		font-size: 18px;
-		line-height: 24px;
-	  }
-	  .efi_testimonial_area{
-		background-position: 15%;
-	  }
-	  .efi_testimonials {
-		padding: 12% 9% 4% 36%;
-	  }
-	  .efi_testimonial_item_author{
-		font-size: 14px;
-		line-height: 18px;
-	  }
-	  .fa-quote-left {
-		left: -56px;
-		top: -18px;
-		font-size: 40px!important;
-	  }
-	  .fa-quote-right {
-		right: 50%;
-		bottom: -45px;
-		font-size: 40px!important;
-	  }
-	  .efi_testimonial_item:first-child {
-		padding-bottom: 30px;
-	  }
-	  .efi_testimonial_area{
-		/* max-height: 600px; */
-		max-height: 550px;
-	  }
-	  /* Testimonial e max-1024px */
-  
-	  /* The Data max-1024px */
-	  .efi_incorporate_header {
-		max-width: 1148px;
-		margin: 40px auto;
-	  }
-	  .efi_incorporate_header h2 {
-		font-size: 30px;
-		line-height: 40px;
-	  }
-	  .efi_incorporate_feature_item h1{
-		font-size: 58px;
-		line-height: 32px;
-	  }
-	  .efi_incorporate_feature_item.one h2{
-		font-size: 30px;
-		line-height: 34px;
-	  }
-	  .efi_incorporate_feature_item h3{
-		font-size: 26px;
-		line-height: 22px;
-	  }
-	  .efi_incorporate_feature_item p, .efi_incorporate_overlay_content p {
-		font-size: 16px;
-		line-height: 18px;
-	  }
-	  .efi_incorporate_overlay_content p{
-		max-width: 95%;
-	  }
-	  .efi_incorporate_feature_item.four p{
-		line-height: 18px;
-	  }
-	  .efi_incorporate_feature_item.two img {
-		max-width: 92px;
-	  }
-	  .efi_incorporate_feature_item.two h5 {
-		font-size: 18px;
-		top: 36%;
-		left: 43%;
-	  }
-	  .efi_incorporate_feature_item h5 {
-		font-size: 20px;
-		line-height: 20px;
-		top: 30%;
-		left: 39%;
-	  }
-	  .efi_incorporate_feature_item.three img {
-		max-width: 85px;
-		padding-bottom: 10px;
-	  }
-	  .efi_incorporate_feature_item.four img {
-		max-width: 111px;
-		padding-bottom: 10px;
-	  }
-	  .efi_incorporate_feature_item.five h2 {
-		font-size: 34px;
-		line-height: 38px;
-	}
-	  .efi_incorporate_feature_item.six img {
-		max-width: 110px;
-	  }
-	  .efi_incorporate_feature_item.six h1{
-		line-height: 36px;
-	  }
-	  .efi_incorporate_feature_item {
-		max-height: 210px;
-		padding: 15px;
-	  }
-	  .overlayBtmtoTop{
-		padding: 0px 15px;
-	  }
-  
-	  /* The Data e max-1024px */
-	}
-  
-	@media all and (max-width: 767px) {
-	  .efi_testimonial_area{
-		/* max-height: 600px; */
-		max-height: 440px;
-	  }
-	  .efi_testimonials{
-		display: none;
-	  }
-	  .efi_testimonial_carousel{
-		padding: 12% 0% 4% 0%;
-	  }    
-	  .efi_testimonial_item_txt{
-		padding-left: 30px;
-		padding-top: 10px;
-	  }
-	  .fa-quote-left {
-		left: 8px;
-		top: 0px;
-	  }
-	  .efi_testimonial_item_txt{
-		padding-left: 60px;
-		padding-top: 10px;
-	  }
-	}
-	@media all and (min-width: 768px) {
-	  .MobShow{
-		display: none; 
-	  }
-	  .DskHide{
-		display: none;
-		height: 0px;
-	  }
-	  .efi_testimonial_carousel-item, .efi_testimonial_carousel-indicators {
-		display: none;
-	  }
-	}
-	@media all and (max-width: 767px) {
-	  /* incorporate max-767px */
-	  .efi_thedata_feature_item.one{
-		border-bottom: 4px solid #FDFBDF;
-		border-right: 4px solid #FDFBDF;
-	  }
-	  .efi_thedata_feature_item.two{
-		border-bottom: 4px solid #FDFBDF;
-		border-right: none;
-	  }
-	  .efi_thedata_feature_item.three{
-		border-bottom: 4px solid #FDFBDF;
-		border-right: 4px solid #FDFBDF;
-	  }
-	  .efi_thedata_feature_item.four{
-		border-bottom: 4px solid #FDFBDF;
-		border-right: none;
-	  }
-	  .efi_thedata_feature_item.five{
-		border-right: 4px solid #FDFBDF;
-	  }
-	  .efi_thedata_feature_item {
-		/* max-height: 180px; */
-		padding: 7px;
-	  }
-	  .efi_thedata_feature_item h1 {
-		font-size: 45px;
-		line-height: 20px;
-	  }
-	  .efi_thedata_feature_item.one h2 {
-		font-size: 23px;
-		line-height: 14px;
-	  }
-	  .efi_thedata_feature_item h3 {
-		font-size: 16px;
-		line-height: 10px;
-	  }
-	  .efi_thedata_feature_item p, .efi_thedata_overlay_content p {
-		font-size: 14px;
-		line-height: 16px;
-	  }
-	  .efi_thedata_feature_item.four img {
-		max-width: 88px;
-	  }
-	  .efi_thedata_feature_item.five h2 {
-		font-size: 29px;
-		line-height: 14px;
-	  }
-	  .efi_thedata_feature_item.six img {
-		max-width: 80px;
-	  }
-	  /* incorporate e max-767px */
-  
-	  /* the data max-767px */
-	  .efi_incorporate_feature_item.one{
-		border-bottom: 4px solid #FDFBDF;
-		border-right: 4px solid #FDFBDF;
-	  }
-	  .efi_incorporate_feature_item.two{
-		border-bottom: 4px solid #FDFBDF;
-		border-right: none;
-	  }
-	  .efi_incorporate_feature_item.three{
-		border-bottom: 4px solid #FDFBDF;
-		border-right: 4px solid #FDFBDF;
-	  }
-	  .efi_incorporate_feature_item.four{
-		border-bottom: 4px solid #FDFBDF;
-		border-right: none;
-	  }
-	  .efi_incorporate_feature_item.five{
-		border-right: 4px solid #FDFBDF;
-	  }
-	  .efi_incorporate_feature_item {
-		padding: 7px;
-	  }
-	  .efi_incorporate_feature_item h1 {
-		font-size: 50px;
-		line-height: 40px;
-	  }
-	  .efi_incorporate_feature_item.one h2 {
-		font-size: 25px;
-		line-height: 30px;
-	  }
-	  .efi_incorporate_feature_item h3 {
-		font-size: 23px;
-		line-height: 10px;
-	  }
-	  .efi_incorporate_feature_item p, .efi_incorporate_overlay_content p {
-		font-size: 14px;
-		line-height: 16px;
-	  }
-	  .efi_incorporate_feature_item.three img {
-		max-width: 62px;
-		padding-bottom: 8px;
-	  }
-	  .efi_incorporate_feature_item.four img {
-		max-width: 88px;
-	  }
-	  .efi_incorporate_feature_item.five h2 {
-		font-size: 25px;
-		line-height: 30px;
-	  }
-	  .efi_incorporate_feature_item h5 {
-		font-size: 16px;
-		line-height: 18px;
-		top: 29%;
-		left: 41%;
-	  }
-	  .efi_incorporate_feature_item.six img {
-		max-width: 80px;
-	  }
-	  /* the data e max-767px */
-  
-	}
-  
-	@media all and (max-width: 430px) {
-	  .MobShow{
-		display: none; 
-	  }
-	  .efi_thedata_feature_item{
-		max-height: 180px;
-	  }
-	  .efi_incorporate_feature_item{
-		max-height: 180px;
-	  }
-	  .efi_testimonials{
-		display: none;
-	  }
-	  .efi_testimonial_area {
-		background-position: 19%;
-	  }
-	  .fa-quote-right {
-		right: 70%;
-		bottom: -50px;
-		font-size: 40px!important;
-	  }
-  
-	}
-	/* The Data, Testimonial, Incorporate style e */
-  
-  
-	
-
-
-
-
-
-
-
-
+  <!-- FOOTER -->
+  <footer class="container-fluid footer-bg">
+    <div class="footer-inner">
+      <div class="banner-bar">
+        <div class="row text-center">
+          <div class="md-col-12">
+            <div class="subscribe-section">
+              <h1>Want to learn more?</h1>
+              <div class="form-section">
+                <form>
+                  <div class="mb-3">
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="User">
+                  </div>
+                  <div class=" mb-3">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                  </div>
+                  <div class="submit-btn">
+                    <button type="submit" class=""><span>Sign Up</span></button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-12">
+            <div class="follow">
+              <h1>Follow us</h1>
+              <div class="social">
+                <ul>
+                  <li><a href="#" target="_blank"><i class="fa-brands fa-facebook" style="color: #FDFBDF"></i></i></a></li>
+                  <li><a href="#" target="_blank"><i class="fa-brands fa-twitter" style="color: #FDFBDF"></i></a></li>
+                  <li><a href="#" target="_blank"><i class="fa-brands fa-youtube" style="color: #FDFBDF"></i></a></li>
+                  <li><a href="#" target="_blank"><i class="fa-brands fa-linkedin-in" style="color: #FDFBDF"></i></a></li>
+                  <li><a href="#" target="_blank"><i class="fa-brands fa-instagram" style="color: #FDFBDF"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-12">
+            <div class="footer-link">
+              <ul>
+                <li><a href="#" target="_blank">Terms of Use</a></li>
+                <li><a href="#" target="_blank">Privacy</a></li>
+                <li><a href="#" target="_blank">Careers</a></li>
+                <li><a href="#" target="_blank">Contact Us</a></li>
+                <li><a href="#" target="_blank">Cookie Policy</a></li>
+                <li><a href="#" target="_blank">Transparency in Coverage</a></li>
+              </ul>
+              <p>&copy; 2023 Electronics For Imaging, Inc. All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 pe-0">
+            <div class="banner-pattern">
+              <div class="banner-pattern-top"></div>
+              <div class="banner-pattern-inner">
+                <div class="pattern-bar"> </div>
+              </div>
+              <div class="banner-pattern-bottom"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="footer-bottom"> </div>
+    </div>
+  </footer>
+  <!-- footer -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+<script src="https://cdn.usebootstrap.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script> 
+<script src="js/main.js"></script> 
+<script src="js/splide.min.js"></script> 
+</body>
+</html>
