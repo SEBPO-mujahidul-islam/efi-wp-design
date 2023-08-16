@@ -1055,6 +1055,11 @@ font-weight: 600;
 
 
 
+
+
+
+
+
 /* 3 Sections == The Data, Testimonial, Incorporate style */
 
 /* The Data area s */
@@ -1454,14 +1459,161 @@ font-weight: 600;
 	  color: #003283;
 	}
 	/* Overlay Style e */
-	/* Incorporate area s */
-  
+	/* Incorporate area e */
+
+	/* Brand Status area s */
+	.efi_brandStatus_area{
+		background-image: url(../image/BA-BG.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding-bottom: 50px;
+	}
+	.efi_brandStatus_header{
+		margin: 80px 0px;
+	}
+	.efi_brandStatus_header h1{
+		font-family: "new-order", sans-serif;
+		font-weight: 600; /*SemiBold */
+		font-size: 80px;
+		line-height: 100px;
+		text-align: center;
+		color: #FDFBDF;
+		width: 100%;
+	}
+	.efi_brandStatus_item.one, .efi_brandStatus_item.two{
+		border-right: 4px solid #FDFBDF;
+	}
+	.efi_brandStatus_item h1{
+		font-family: "new-order", sans-serif;
+		font-weight: 700; /*Bold */
+		font-size: 100px;
+		line-height: 100px;
+		text-align: center;
+		color: #FDFBDF;
+		width: 100%;
+	}
+	.efi_brandStatus_item p{
+		font-family: "freight-sans-pro", sans-serif;
+		font-weight: 400; /*Book */
+		font-size: 40px;
+		line-height: 45px;
+		text-align: center;
+		color: #FDFBDF;
+	}
+	/* Brand Status area e */
+
+	/* Brand Status Graph area  */
+	.efi_BAgraph_area{
+		padding: 50px 10px;
+	}
+	.efi_BAgraph_header h1{
+		font-family: "new-order", sans-serif;
+		font-weight: 600; /*SemiBold */
+		font-size: 80px;
+		line-height: 95px;
+		text-align: center;
+		color: #FDFBDF;
+		width: 100%;
+		padding: 50px 20px;
+	}
+	.efi_BAgraph_header p{
+		font-family: "freight-sans-pro", sans-serif;
+		font-weight: 400; /*Book */
+		font-size: 40px;
+		line-height: 50px;
+		text-align: center;
+		color: #FDFBDF;
+	}
+	.efi_BAgraph_graph_row{
+		padding: 50px 20px;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: flex-start;
+		color: #FDFBDF;
+	}
+	.efi_BAgraph_part.one{
+		width: 617px;
+		padding-right: 2%;
+		display: flex;
+		flex-direction: column;
+	}
+	.efi_BAgraph_graph_tbl{
+		width: 90%;
+	}
+	.efi_BAgraph_graph_color_row{
+		display: flex; 
+		flex-direction: row; 
+		padding: 20px 0px;
+	}
+	.efi_BAgraph_graph_color_row_title{
+		width: 25%;
+	}
+	.efi_BAgraph_graph_colors{
+		width: 75%;
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+	}
+	.efi_BAgraph_graph_color_top{
+		width: 100%;
+	}
+	.efi_BAgraph_graph_color_names tr td{
+		padding: 5px 10px 5px 0px;
+	}
+	.efi_BAgraph_graph_color_name_item{
+		padding: 5px 0px;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+	.efi_BAgraph_graph_color_bottom{
+		display: flex;
+	}
+	.efi_BAgraph_graph_color_name_item .title{
+		padding-left: 15px;
+	}
+	.efi_BAgraph_img{
+		max-width: 100%;
+	}
+	/* Brand Status Graph area e */
+
+	/* Brand OBA area s */
+	.efi_OBAtheData_area{
+		
+	}
+	/* Brand OBA area e */
+
 	@media all and (max-width: 1850px){
 		.efi_testimonial_area {
 			background-position: 30%;
 		}
+
 	}
 
+	@media all and (max-width: 1480px){
+		/* Brand Status area s */
+		.efi_brandStatus_header{
+			margin: 70px 0px;
+		}
+		.efi_brandStatus_header h1{
+			font-size: 60px;
+			line-height: 70px;
+		}
+		.efi_brandStatus_item.one, .efi_brandStatus_item.two{
+			border-right: 4px solid #FDFBDF;
+		}
+		.efi_brandStatus_item h1{
+			font-size: 70px;
+			line-height: 70px;
+		}
+		.efi_brandStatus_item p{
+			font-size: 30px;
+			line-height: 35px;
+		}
+		/* Brand Status area s */
+	}
 	@media all and (max-width: 1440px){
 	  .efi_incorporate_feature_item h2{
 		font-size: 60px;
@@ -1504,8 +1656,20 @@ font-weight: 600;
 		.efi_testimonial_item:first-child {
 		padding-bottom: 30px;
 		}
-
 		/* Testimonial e max-1440px */
+
+		/* Brand BA Graph area max-1440px s */
+		.efi_BAgraph_header h1{
+			padding: 40px 20px;
+			font-size: 40px;
+			line-height: 45px;
+		}
+		.efi_BAgraph_header p{
+			font-size: 22px;
+			line-height: 24px;
+		}
+		/* Brand BA Graph area max-1440px e */
+
 	}
 	@media all and (max-width: 1359px){
 	  .LaptabMobHide{
@@ -1563,6 +1727,27 @@ font-weight: 600;
 		font-size: 64px;
 	  }
 	  /* the data e max-1359px */
+
+	  	/* Brand Status area s */
+		.efi_brandStatus_header{
+			margin: 60px 0px;
+		}
+		.efi_brandStatus_header h1{
+			font-size: 50px;
+			line-height: 60px;
+		}
+		.efi_brandStatus_item.one, .efi_brandStatus_item.two{
+			border-right: 4px solid #FDFBDF;
+		}
+		.efi_brandStatus_item h1{
+			font-size: 60px;
+			line-height: 60px;
+		}
+		.efi_brandStatus_item p{
+			font-size: 24px;
+			line-height: 30px;
+		}
+		/* Brand Status area s */
 	}
 	@media all and (max-width: 1024px){
 	  /* incorporate  max-1024px */
@@ -1731,7 +1916,55 @@ font-weight: 600;
 	  /* The Data e max-1024px */
 	}
   
+	@media all and (max-width: 992px) {
+		.TabMobHide{
+			display: none;
+		  }
+		/* Brand Status area s */
+			.efi_brandStatus_header{
+			margin: 50px 0px;
+		}
+		.efi_brandStatus_header h1{
+			font-size: 40px;
+			line-height: 50px;
+		}
+		.efi_brandStatus_item.one, .efi_brandStatus_item.two{
+			border-right: 4px solid #FDFBDF;
+		}
+		.efi_brandStatus_item h1{
+			font-size: 50px;
+			line-height: 50px;
+		}
+		.efi_brandStatus_item p{
+			font-size: 20px;
+			line-height: 26px;
+		}
+		/* Brand Status area e */
+		/* Brand BA Graph area max-992px s */
+		.efi_BAgraph_graph_row{
+			flex-direction: column-reverse;
+		}
+		.efi_BAgraph_part.one{
+			width: 100%;
+			padding-top: 60px;
+			flex-direction: row;
+		}
+		.efi_BAgraph_graph_color_top{
+			width: 65%;
+		}
+		.efi_BAgraph_header h1{
+			padding: 30px 20px;
+			font-size: 30px;
+			line-height: 35px;
+		}
+		.efi_BAgraph_header p{
+			font-size: 18px;
+			line-height: 22px;
+		}
+		/* Brand BA Graph area max-992px e */
+	}
 	@media all and (max-width: 767px) {
+	/* testimonial max767px */
 	  .efi_testimonial_area{
 		/* max-height: 600px; */
 		max-height: 440px;
@@ -1754,6 +1987,28 @@ font-weight: 600;
 		padding-left: 60px;
 		padding-top: 10px;
 	  }
+	  /* testimonial max767px e */
+
+	/* Brand Status area s */
+		.efi_brandStatus_header{
+		margin: 50px 0px;
+	}
+	.efi_brandStatus_header h1{
+		font-size: 30px;
+		line-height: 35px;
+	}
+	.efi_brandStatus_item.one, .efi_brandStatus_item.two{
+		border-right: 4px solid #FDFBDF;
+	}
+	.efi_brandStatus_item h1{
+		font-size: 30px;
+		line-height: 35px;
+	}
+	.efi_brandStatus_item p{
+		font-size: 16px;
+		line-height: 17px;
+	}
+	/* Brand Status area s */
 	}
 	@media all and (min-width: 768px) {
 	  .MobShow{
@@ -1768,6 +2023,9 @@ font-weight: 600;
 	  }
 	}
 	@media all and (max-width: 767px) {
+		.MobHide{
+			display: none;
+		}
 	  /* incorporate max-767px */
 	  .efi_thedata_feature_item.one{
 		border-bottom: 4px solid #FDFBDF;
@@ -1883,6 +2141,46 @@ font-weight: 600;
   
 	}
   
+	@media all and (max-width: 575px) {
+		/* Brand Status area s */
+		.efi_brandStatus_header{
+			margin: 40px 0px;
+		}
+		.efi_brandStatus_header h1{
+			font-size: 24px;
+			line-height: 30px;
+		}
+		.efi_brandStatus_item.one, .efi_brandStatus_item.two{
+			border-right: 4px solid #FDFBDF;
+		}
+		.efi_brandStatus_item h1{
+			font-size: 24px;
+			line-height: 30px;
+		}
+		.efi_brandStatus_item p{
+			font-size: 14px;
+			line-height: 16px;
+		}
+		/* Brand Status area s */
+
+		/* Brand BA Graph area max-575px s */
+		.efi_BAgraph_part.one{
+			padding: 0px;
+		}
+		.efi_BAgraph_graph_row{
+			padding: 0px;
+		}
+		.efi_BAgraph_part.one{
+			flex-direction: column;
+		}
+		.efi_BAgraph_graph_color_top{
+			width: 100%;
+		}
+		.efi_BAgraph_graph_color_bottom{
+			padding: 0px;
+		}
+		/* Brand BA Graph area max-575px e */
+	}
 	@media all and (max-width: 430px) {
 	  .MobShow{
 		display: none; 
@@ -1904,9 +2202,41 @@ font-weight: 600;
 		bottom: -50px;
 		font-size: 40px!important;
 	  }
+		/* Brand Status area s */
+		.efi_brandStatus_header{
+			margin: 40px 0px;
+		}
+		.efi_brandStatus_header h1{
+			font-size: 20px;
+			line-height: 25px;
+		}
+		.efi_brandStatus_item.one, .efi_brandStatus_item.two{
+			border-right: 4px solid #FDFBDF;
+		}
+		.efi_brandStatus_item h1{
+			font-size: 20px;
+			line-height: 22px;
+		}
+		.efi_brandStatus_item p{
+			font-size: 12px;
+			line-height: 15px;
+		}
+		/* Brand Status area s */
   
 	}
 	/* The Data, Testimonial, Incorporate style e */
+  
+  
+	
+
+
+
+
+
+
+
+
+
   
   
 	
