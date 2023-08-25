@@ -1329,6 +1329,7 @@ font-weight: 600;
   
   /* ======== Incorporate area s ======== */
 	.efi_incorporate_area{
+	margin-bottom: 50px;
 	  width: 100%;
 	  background-color: #003283;
 	}
@@ -1924,6 +1925,9 @@ font-weight: 600;
 		/* Brand Status area s */
 	}
 	@media all and (max-width: 1440px){
+		.efi_incorporate_feature_item{
+			height: 330px;
+		}
 	  .efi_incorporate_feature_item h2{
 		font-size: 60px;
 		line-height: 70px;
