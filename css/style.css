@@ -1329,8 +1329,8 @@ font-weight: 600;
   
   /* ======== Incorporate area s ======== */
 	.efi_incorporate_area{
-	margin-bottom: 50px;
 	  width: 100%;
+	  margin-bottom: 50px;
 	  background-color: #003283;
 	}
 	.efi_incorporate_header{
@@ -1772,6 +1772,9 @@ font-weight: 600;
 	}	
 	/* ======== The Data area e ========= */
 	/* ======== The obaCaseGraph  ========= */
+	.efi_obaCaseGraph_header{
+		margin-bottom: 40px;
+	}
 	.efi_obaCaseGraph_header h1{
 		font-family: "new-order", sans-serif;
 		font-weight: 600; /*SemiBold */
@@ -1780,8 +1783,15 @@ font-weight: 600;
 		text-align: center;
 		color: #FDFBDF;
 	}
+	.efi_obaCaseGraph_info_boxes{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: baseline;
+	}
 	.efi_obaCaseGraph_info{
-		padding: 90px 10px;
+		padding: 90px 20px;
+		min-width: 45%;
 	}
 	.efi_obaCaseGraph_info.one{
 		border-bottom: 4px solid #FFFFFF;
@@ -2064,8 +2074,25 @@ font-weight: 600;
 		max-width: 220px;
 	}
 	/* incorporate max-1440px e */
-
+	/* ======== The obaCaseGraph max-1440px  ========= */
+	.efi_obaCaseGraph_info {
+		padding: 50px 20px;
 	}
+	.efi_obaCaseGraph_header h1{
+		font-size: 60px;
+		line-height: 65px;
+	}
+	.efi_obaCaseGraph_info h1{
+		font-size: 100px;
+		line-height: 80px;
+	}
+	.efi_obaCaseGraph_info p{
+		font-size: 30px;
+		line-height: 32px;
+	}
+	/* ======== The obaCaseGraph max-1440px  e ========= */
+	}
+
 	@media all and (max-width: 1359px){
 	  .LaptabMobHide{
 		display: none;
@@ -2453,7 +2480,7 @@ font-weight: 600;
 			line-height: 19px;
 		}
 		.efi_OBAtheData_quote .fa-quote-right {
-			right: -30px;
+			right: -38px;
 			bottom: -18px;
 			font-size: 36px!important;
 		}
@@ -2548,6 +2575,31 @@ font-weight: 600;
 		line-height: 22px;
 	}
 	/* Brand Status area max-992px e */
+	/* ======== The obaCaseGraph ========= */
+	.efi_obaCaseGraph_info {
+		padding: 30px 10px;
+	}
+	.efi_obaCaseGraph_header h1{
+		font-size: 30px;
+		line-height: 40px;
+	}
+	.efi_obaCaseGraph_info_boxes{
+		flex-direction: row;
+	}
+	.efi_obaCaseGraph_info.one {
+		border-right: 4px solid #FFFFFF;
+		border-bottom: none;
+	}
+	.efi_obaCaseGraph_info h1{
+		font-size: 60px;
+		line-height: 70px;
+	}
+	.efi_obaCaseGraph_info p{
+		font-size: 20px;
+		line-height: 26px;
+	}
+	/* ======== The obaCaseGraph e ========= */
+
 	}
 	@media all and (min-width: 768px) {
 	  .MobShow{
@@ -2818,7 +2870,31 @@ font-weight: 600;
 		.efi_OBAimageBox_header.two{
 			margin: 30px auto;
 		}
-		/* Brand Status area max-185 e */
+		/* Brand Status area max-767px  e */
+		/* ======== The obaCaseGraph max-767px  ========= */
+		.efi_obaCaseGraph_info {
+			padding: 30px 10px;
+		}
+		.efi_obaCaseGraph_header h1{
+			font-size: 20px;
+			line-height: 26px;
+		}
+		.efi_obaCaseGraph_info_boxes{
+			flex-direction: row;
+		}
+		.efi_obaCaseGraph_info.one {
+			border-right: 4px solid #FFFFFF;
+			border-bottom: none;
+		}
+		.efi_obaCaseGraph_info h1{
+			font-size: 45px;
+			line-height: 60px;
+		}
+		.efi_obaCaseGraph_info p{
+			font-size: 15px;
+			line-height: 18px;
+		}
+		/* ======== The obaCaseGraph max-767px  e ========= */
 	}
   
 	@media all and (max-width: 575px) {
