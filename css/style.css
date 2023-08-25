@@ -1065,6 +1065,7 @@ font-weight: 600;
 /* The Data area s */
 .efi_the_data_area{
 	width: 100%;
+	margin-bottom: 50px;
 	background-color: #003283;
   }
   .efi_the_data_header{
@@ -1162,6 +1163,9 @@ font-weight: 600;
 	color: #FDFBDF;
 	width: 100%;
   }
+  .efi_thedata_feature_item.one img{
+	width: 294px;
+  }
   .efi_thedata_feature_item.two img{
 	max-width: 253px;
 	padding-bottom: 10px;
@@ -1171,8 +1175,11 @@ font-weight: 600;
 	padding-bottom: 10px;
   }  
   .efi_thedata_feature_item.four img{
-	max-width: 313px;
+	max-width: 312px;
 	padding-bottom: 10px;
+  }
+  .efi_thedata_feature_item.five img{
+	width: 295px;
   }
   .efi_thedata_feature_item.six img{
 	max-width: 250px;
@@ -1393,14 +1400,27 @@ font-weight: 600;
 	  font-size: 83px;
 	  line-height: 100px;
 	}
+	.efi_incorporate_feature_item.one img{
+		width: 385px;
+	}
+	.efi_incorporate_feature_item.two img{
+		width: 336px;
+	}
 	.efi_incorporate_feature_item.three img{
 	  max-width: 173px;
 	  padding-bottom: 20px;
 	}  
 	.efi_incorporate_feature_item.four img{
-	  max-width: 253px;
+	  max-width: 243px;
 	  padding-bottom: 22px;
 	}
+	.efi_incorporate_feature_item.five img{
+	  width: 430px;
+	}
+	.efi_incorporate_feature_item.six img{
+	  width: 340px;
+	}
+
 	.efi_incorporate_feature_item h3{
 		font-family: "freight-sans-pro", sans-serif;
 		font-weight: 400; /*Book */
@@ -1750,6 +1770,41 @@ font-weight: 600;
 		width: 100%;
 	}	
 	/* ======== The Data area e ========= */
+	/* ======== The obaCaseGraph  ========= */
+	.efi_obaCaseGraph_header h1{
+		font-family: "new-order", sans-serif;
+		font-weight: 600; /*SemiBold */
+		font-size: 80px;
+		line-height: 100px;
+		text-align: center;
+		color: #FDFBDF;
+	}
+	.efi_obaCaseGraph_info{
+		padding: 90px 10px;
+	}
+	.efi_obaCaseGraph_info.one{
+		border-bottom: 4px solid #FFFFFF;
+	}
+	.efi_obaCaseGraph_info h1{
+		font-family: "new-order", sans-serif;
+		font-weight: 700; /*Bold */
+		font-size: 162px;
+		line-height: 162px;
+		text-align: center;
+		color: #FDFBDF;
+	}
+	.efi_obaCaseGraph_info p{
+		font-family: "freight-sans-pro", sans-serif;
+		font-weight: 400; /*Book */
+		font-size: 55px;
+		line-height: 65px;
+		text-align: center;
+		color: #FDFBDF;
+	}
+	.efi_obaCaseGraph_img{
+		max-width: 100%;
+	}
+	/* ======== The obaCaseGraph e ========= */
 
 	/* ======== The DataImg Box area  ========= */
 	.efi_OBAimageBox_area{
@@ -1775,31 +1830,61 @@ font-weight: 600;
 		width: 100%;
 		margin-bottom: 50px;
 	}
+	.efi_OBAimageBox_img{
+		position: relative;
+	}
 	.efi_OBAimageBox_img img{
 		width: 100%;
 	}
 	/* ======== The DataImg Box area e ========= */
 
 	/* ======== The DataImg Box two area ========= */
+	.efi_OBAimageBox_header.two{
+		margin: 100px auto;
+	}
 	.efi_OBAimageBox_two_flex{
+		position: absolute;
+		top: 5%;
+		left: 2%;
 		width: 100%;
 		display: flex;
-		justify-content: space-evenly;
+		justify-content: flex-start;
 		align-items: center;
 		flex-direction: row;
 		flex-wrap: nowrap;
 	}
 	.efi_OBAimageBox_two_txt{
+		width: 46%;
+		align-self: flex-start;
+	}
+	.efi_OBAimageBox_two_txt p{
+		margin: 0px;
+		padding: 0px;
+		font-family: "freight-sans-pro", sans-serif;
+		font-weight: 300; /*Light */
+		font-size: 40px;
+		line-height: 50px;
+		text-align: center;
+		color: #FDFBDF;
+		width: 100%;
+		/* margin-bottom: 50px; */
+	}
+	.efi_OBAimageBox_two_txt_p1{
+		margin-bottom: 10px!important;
+	}
+	.efi_OBAimageBox_two_txt_p2{
+		font-family: "freight-sans-pro", sans-serif;
+		font-weight: 400; /*Book */
+		font-style: italic;
+	}
+	/* .efi_OBAimageBox_two_txt{
 		position: relative;
 		background-image: url(../image/OBAimageBox-2-part-1-BG.png);
 		background-size: cover;
 		background-repeat: no-repeat;
 		width: 100%;
 		height: 100%;
-	}
-	.efi_OBAimageBox_two_img{
-
-	}
+	} */
 	/* ======== The DataImg Box two area e ========= */
 
 
@@ -1807,6 +1892,12 @@ font-weight: 600;
 		.efi_testimonial_area {
 			background-position: 30%;
 		}
+		/* Brand Status area max-1850 s */
+		.efi_OBAimageBox_two_txt p{
+			font-size: 32px;
+			line-height: 38px;
+		}
+		/* Brand Status area max-185 e */
 
 	}
 
@@ -1930,6 +2021,45 @@ font-weight: 600;
 		width: 100%;
 	}
 	/* ======== The DataImg Box area e ========= */
+	/* Brand Status area max-1440 s */
+	.efi_OBAimageBox_header h1{
+		font-size: 48px;
+		line-height: 72px;
+	}
+	.efi_OBAimageBox_two_txt p{
+		font-size: 24px;
+		line-height: 28px;
+	}
+	/* Brand Status area max-1440 e */
+	/* incorporate max-1440px */
+	.efi_incorporate_feature_item p, .efi_incorporate_feature_item.four p{
+		font-size: 22px;
+		line-height: 28px;
+	}
+	.efi_incorporate_feature_item.one img {
+		width: 255px;
+		}
+	  .efi_incorporate_feature_item.two img {
+		max-width: 222px;
+		}
+	  .efi_incorporate_feature_item.three img {
+		max-width: 206px;
+	  }
+	  .efi_incorporate_feature_item.three img {
+		max-width: 138px;
+		padding-bottom: 10px;
+	  }
+	  .efi_incorporate_feature_item.four img {
+		max-width: 140px;
+		padding-bottom: 10px;
+	  }
+	.efi_incorporate_feature_item.five img {
+		width: 254px;
+	}
+	.efi_incorporate_feature_item.six img {
+		max-width: 220px;
+	}
+	/* incorporate max-1440px e */
 
 	}
 	@media all and (max-width: 1359px){
@@ -1962,6 +2092,10 @@ font-weight: 600;
 		max-width: 95%;
 		margin: 0px auto;
 	  }
+	  .efi_thedata_feature_item.one img{
+		max-width: 210px;
+		margin-bottom: 10px;
+	  }
 	  .efi_thedata_feature_item.two img{
 		max-width: 220px;
 	  }
@@ -1976,6 +2110,10 @@ font-weight: 600;
 	  }
 	  .efi_thedata_feature_item.five h2{
 		font-size: 84px;
+	  }
+	  .efi_thedata_feature_item.five img{
+		max-width: 210px;
+		margin-bottom: 10px;
 	  }
 	  .efi_thedata_feature_item.six img{
 		max-width: 225px;
@@ -2091,6 +2229,9 @@ font-weight: 600;
 	  .efi_thedata_overlay_content p{
 		max-width: 95%;
 	  }
+	  .efi_thedata_feature_item.one img{
+		max-width: 90px;
+	  }
 	  .efi_thedata_feature_item.two img {
 		max-width: 92px;
 	  }
@@ -2108,6 +2249,9 @@ font-weight: 600;
 	  .efi_thedata_feature_item.five h2 {
 		font-size: 38px;
 		line-height: 22px;
+	  }
+	  .efi_thedata_feature_item.five img{
+		max-width: 90px;
 	  }
 	  .efi_thedata_feature_item.six img {
 		max-width: 110px;
@@ -2168,6 +2312,9 @@ font-weight: 600;
 		font-size: 58px;
 		line-height: 32px;
 	  }
+	  .efi_incorporate_feature_item.one img {
+		width: 208px;
+		}
 	  .efi_incorporate_feature_item.one h2{
 		font-size: 30px;
 		line-height: 34px;
@@ -2184,11 +2331,12 @@ font-weight: 600;
 		max-width: 95%;
 	  }
 	  .efi_incorporate_feature_item.four p{
+		font-size: 16px;
 		line-height: 18px;
 	  }
 	  .efi_incorporate_feature_item.two img {
-		max-width: 92px;
-	  }
+		max-width: 178px;
+		}
 	  .efi_incorporate_feature_item.two h5 {
 		font-size: 18px;
 		top: 36%;
@@ -2199,6 +2347,9 @@ font-weight: 600;
 		line-height: 20px;
 		top: 30%;
 		left: 39%;
+	  }
+	  .efi_incorporate_feature_item.three img {
+		max-width: 206px;
 	  }
 	  .efi_incorporate_feature_item.three img {
 		max-width: 85px;
@@ -2212,9 +2363,12 @@ font-weight: 600;
 		font-size: 34px;
 		line-height: 38px;
 	}
-	  .efi_incorporate_feature_item.six img {
-		max-width: 110px;
-	  }
+	.efi_incorporate_feature_item.five img {
+		width: 212px;
+	}
+	.efi_incorporate_feature_item.six img {
+		max-width: 160px;
+	}
 	  .efi_incorporate_feature_item.six h1{
 		line-height: 36px;
 	  }
@@ -2226,6 +2380,16 @@ font-weight: 600;
 		padding: 0px 15px;
 	  }  
 	  /* The Data e max-1024px */
+	/* Brand Status area max-1024 s */
+	.efi_OBAimageBox_header h1{
+		font-size: 42px;
+		line-height: 56px;
+	}
+	.efi_OBAimageBox_two_txt p{
+		font-size: 22px;
+		line-height: 26px;
+	}
+	/* Brand Status area max-1024 e */
 
 	}
   
@@ -2370,6 +2534,16 @@ font-weight: 600;
 			margin-bottom: 30px;
 		}
 		/* === The DataImg Box max-992px area e === */
+	/* Brand Status area max-992px s */
+	.efi_OBAimageBox_header h1{
+		font-size: 30px;
+		line-height: 40px;
+	}
+	.efi_OBAimageBox_two_txt p{
+		font-size: 18px;
+		line-height: 22px;
+	}
+	/* Brand Status area max-992px e */
 	}
 	@media all and (min-width: 768px) {
 	  .MobShow{
@@ -2523,9 +2697,15 @@ font-weight: 600;
 		font-size: 23px;
 		line-height: 10px;
 	  }
-	  .efi_incorporate_feature_item p, .efi_incorporate_overlay_content p {
+	  .efi_incorporate_feature_item p, .efi_incorporate_overlay_content p, .efi_incorporate_feature_item.four p {
 		font-size: 14px;
 		line-height: 16px;
+	  }
+	  .efi_incorporate_feature_item.one img {
+		max-width: 150px;
+	  }
+	  .efi_incorporate_feature_item.two img {
+		max-width: 120px;
 	  }
 	  .efi_incorporate_feature_item.three img {
 		max-width: 62px;
@@ -2544,8 +2724,11 @@ font-weight: 600;
 		top: 29%;
 		left: 41%;
 	  }
+	  .efi_incorporate_feature_item.five img {
+		width: 155px;
+	}
 	  .efi_incorporate_feature_item.six img {
-		max-width: 80px;
+		max-width: 120px;
 	  }
 	  /* the data e max-767px */
 	  
@@ -2616,7 +2799,22 @@ font-weight: 600;
 			margin: 0px auto;
 			margin-bottom: 20px;
 		}
-		/* === The DataImg Box max-992px area e === */
+		/* === The DataImg Box max-767px area e === */
+				/* Brand Status area max-767px s */
+		.efi_OBAimageBox_two_flex{
+			left: 5%;
+		}
+		.efi_OBAimageBox_two_txt p{
+			font-size: 14px;
+			line-height: 18px;
+		}
+		.efi_OBAimageBox_two_txt {
+			width: 90%;
+		}
+		.efi_OBAimageBox_header.two{
+			margin: 30px auto;
+		}
+		/* Brand Status area max-185 e */
 	}
   
 	@media all and (max-width: 575px) {
@@ -2666,6 +2864,9 @@ font-weight: 600;
 	@media all and (max-width: 430px) {
 	  .MobShow{
 		display: none; 
+	  }
+	  .efi_OBAimageBox_img .MobShow{
+		display: block;
 	  }
 	  .efi_thedata_feature_item{
 		max-height: 180px;
